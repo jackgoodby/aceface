@@ -1,0 +1,253 @@
+@font-face {
+    font-family: 'ralewaylight';
+    src: url('fonts/raleway/raleway-light-webfont.woff2') format('woff2'),
+    url('fonts/raleway/raleway-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'ralewaymedium';
+    src: url('fonts/raleway/raleway-medium-webfont.woff2') format('woff2'),
+    url('fonts/raleway/raleway-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'ralewayregular';
+    src: url('fonts/raleway/raleway-regular-webfont.woff2') format('woff2'),
+    url('fonts/raleway/raleway-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'ralewaysemibold';
+    src: url('fonts/raleway/raleway-semibold-webfont.woff2') format('woff2'),
+    url('fonts/raleway/raleway-semibold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'sf_pro_displaylight';
+    src: url('fonts/sfpro/sf-pro-display-light-webfont.woff2') format('woff2'),
+    url('fonts/sfpro/sf-pro-display-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-color: #05406f;
+    margin: 0;
+    padding: 0;
+    overscroll-behavior: none;
+}
+
+#banner{
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: #05406f;
+    padding: 10px 0;
+    text-align: center;
+    z-index: 10000;
+}
+
+#fixtures{
+    margin: 15px 10px 0 10px;
+    float: left;
+}
+
+.fixture{
+    margin-bottom: 30px;
+    float: left;
+    width: 100%;
+}
+
+.fixture-title-bar{
+    float: left;
+    width: 100%;
+    color: #fff;
+    margin-bottom: 7px;
+    font-family: "ralewaylight", sans-serif;
+    font-size: 20px;
+}
+
+.fixture-card{
+    background-color: #fff;
+    float: left;
+    width: 100%;
+    border-radius: 10px;
+    padding: 10px 0;
+}
+
+.fixture-card-wrap{
+    float: left;
+    margin: 0 0 0 10px;
+    width: 94%;
+}
+
+.fixture-status{
+    clear: left;
+    float: left;
+    margin: 15px 0px 0 0px;
+    font-family: "ralewayregular", sans-serif;
+    font-size: 16px;
+    color: #666;
+    width: 100%;
+}
+
+.fixture-status .duration{
+    float: left;
+}
+
+.fixture-status .completed{
+    float: right;
+}
+
+.fixture-name{
+    margin: 0 0 10px 0;
+    font-family: "ralewaymedium", sans-serif;
+    font-size: 1.3em;
+    text-align: center;
+    color: #666;
+}
+
+.team{
+    float: left;
+    width: 100%;
+    clear: left;
+    position: relative;
+    /*background-color: darkorange;*/
+}
+.teama{
+    padding-bottom: 10px;
+    border-bottom: 2px dashed #a6a6a6;
+}
+
+.teamb{
+    margin-top: 10px;
+}
+
+.players {
+    float: left;
+    width: 53%;
+    /*background: #ff0;*/
+}
+
+.player{
+    float: left;
+    width: 100%;
+    padding-top: 6px;
+    /*background: #cf7fcf;*/
+    overflow: hidden;
+    font-family: "ralewayregular", sans-serif;
+    font-size: 0.9em;
+}
+.player img{
+    float: left;
+    width: 45px;
+    height: 45px;
+    max-width: 45px;
+    margin: -6px 10px 0 0;
+    border-radius: 50%;
+}
+
+.seed{
+    color: #05406f;
+    font-family: "ralewaymedium", sans-serif;
+    font-size: 1em;
+}
+
+.player.player2{
+    margin-top: 5px;
+}
+
+.scores{
+    float: left;
+    width: 47%;
+    /*background: #ccc;*/
+}
+
+.teama .scores {
+    position: absolute;
+    bottom: 30px;
+    right: 0;
+}
+
+.teamb .scores {
+    position: absolute;
+    top: 25px;
+    right: 0;
+}
+
+.scores span {
+    display: block;
+    float: left;
+    width: 22px;
+    max-width: 44px;
+    font-family: "sf_pro_displaylight", sans-serif;
+    font-size: 2.2em;
+    text-align: center;
+    margin-right: 8px;
+    /*background: burlywood;*/
+}
+
+.scores span.set-game:last-of-type {
+    margin-right: 0;
+    width: 28px;
+}
+
+.scores .point {
+    margin-right: 21px;
+    width: 38px;
+}
+
+
+.desc {
+    color: #ccc;
+    /*background-color: rgba(0, 0, 0, 0.9);*/
+    border-radius: 4px;
+    padding: 10px;
+    clear: left;
+}
+
+@media (max-width: 640px) {
+    h1 {
+        color: red;
+    }
+
+    .desc:before {
+        content: "This browser window is smaller than 640px wide.";
+    }
+}
+
+@media (min-width: 640px) {
+    h1 {
+        color: blue;
+    }
+
+    .desc:before {
+        content: "This browser window is at least 640px wide!";
+    }
+}
+
+@media (min-width: 500px) and (max-width: 600px) {
+    h1 {
+        color: fuchsia;
+    }
+
+    .desc:after {
+        content: " In fact, it's between 500px and 600px wide.";
+    }
+}
+
+@media (orientation: portrait) {
+    .orientation:after {
+        content: " Portrait.";
+    }
+}
+
+@media (orientation: landscape) {
+    .orientation:after {
+        content: " Landscape.";
+    }
+}
