@@ -1,0 +1,216 @@
+{
+    "RequestItems": {
+        "aceface-fixture" : [
+            {
+                "PutRequest": {
+                    "Item": {
+                        "ID": {"N": "1"},
+                        "SK": {"S": "FIXTURE"},
+                        "tournament_name": {"S": "Women's Singles Final"},
+                        "court": {"S": "Centre Court"},
+                        "start_at": {"S": "2023-09-23T13:00:00Z"},
+                        "ended_at": {"S": ""},
+                        "in_progress": {"BOOL": true}
+                    }
+                }
+            },
+            {
+                "PutRequest": {
+                    "Item": {
+                        "ID": {"N": "2"},
+                        "SK": {"S": "FIXTURE"},
+                        "tournament_name": {"S": "Men's Doubles Final"},
+                        "court": {"S": "Centre Court"},
+                        "start_at": {"S":  "2023-09-23T15:00:00Z"},
+                        "ended_at": {"S":  ""},
+                        "in_progress": {"BOOL": false}
+                    }
+                }
+            },
+            {
+                "PutRequest": {
+                    "Item": {
+                        "ID": {"N": "3"},
+                        "SK": {"S": "FIXTURE"},
+                        "tournament_name": {"S": "Men's Over 60s Doubles Final"},
+                        "court": {"S": "Centre Court"},
+                        "start_at": {"S":  "2023-09-23T17:00:00Z"},
+                        "ended_at": {"S":  ""},
+                        "in_progress": {"BOOL": false}
+                    }
+                }
+            },
+            {
+                "PutRequest": {
+                    "Item": {
+                        "ID": {"N": "4"},
+                        "SK": {"S": "FIXTURE"},
+                        "tournament_name": {"S": "Men's Singles Plate Final"},
+                        "court": {"S": "Court 5"},
+                        "start_at": {"S":  "2023-09-23T13:00:00Z"},
+                        "ended_at": {"S":  ""},
+                        "in_progress": {"BOOL": true}
+                    }
+                }
+            },
+            {
+                "PutRequest": {
+                    "Item": {
+                        "ID": {"N": "5"},
+                        "SK": {"S": "FIXTURE"},
+                        "tournament_name": {"S": "Veteran Men's Singles Final"},
+                        "court": {"S": "Court 5"},
+                        "start_at": {"S":  "2023-09-23T15:00:00Z"},
+                        "ended_at": {"S":  ""},
+                        "in_progress": {"BOOL": false}
+                    }
+                }
+            },
+            {
+                "PutRequest": {
+                    "Item": {
+                        "ID": {"N": "6"},
+                        "SK": {"S": "FIXTURE"},
+                        "tournament_name": {"S": "Veteran Mixed Doubles Final"},
+                        "court": {"S": "Court 7"},
+                        "start_at": {"S":  "2023-09-23T13:00:00Z"},
+                        "ended_at": {"S":  ""},
+                        "in_progress": {"BOOL": true}
+                    }
+                }
+            },
+            {
+                "PutRequest": {
+                    "Item": {
+                        "ID": {"N": "7"},
+                        "SK": {"S": "FIXTURE"},
+                        "tournament_name": {"S": "Veteran Ladies' Doubles Final"},
+                        "court": {"S": "Court 7"},
+                        "start_at": {"S":  "2023-09-23T15:00:00Z"},
+                        "ended_at": {"S":  ""},
+                        "in_progress": {"BOOL": false}
+                    }
+                }
+            },
+            {
+                "PutRequest": {
+                    "Item": {
+                        "ID": {"N": "8"},
+                        "SK": {"S": "FIXTURE"},
+                        "tournament_name": {"S": "Mixed Doubles Plate Final"},
+                        "court": {"S": "Court 7"},
+                        "start_at": {"S":  "2023-09-23T17:00:00Z"},
+                        "ended_at": {"S":  ""},
+                        "in_progress": {"BOOL": false}
+                    }
+                }
+            },
+            {
+                "PutRequest": {
+                    "Item": {
+                        "ID": {"N": "9"},
+                        "SK": {"S": "FIXTURE"},
+                        "tournament_name": {"S": "Men's Singles Final"},
+                        "court": {"S": "Centre Court"},
+                        "start_at": {"S":  "2023-09-24T13:00:00Z"},
+                        "ended_at": {"S":  ""},
+                        "in_progress": {"BOOL": false}
+                    }
+                }
+            },
+            {
+                "PutRequest": {
+                    "Item": {
+                        "ID": {"N": "10"},
+                        "SK": {"S": "FIXTURE"},
+                        "tournament_name": {"S": "Women's Doubles Final"},
+                        "court": {"S": "Centre Court"},
+                        "start_at": {"S":  "2023-09-24T15:00:00Z"},
+                        "ended_at": {"S":  ""},
+                        "in_progress": {"BOOL": false}
+                    }
+                }
+            },
+            {
+                "PutRequest": {
+                    "Item": {
+                        "ID": {"N": "11"},
+                        "SK": {"S": "FIXTURE"},
+                        "tournament_name": {"S": "Mixed Doubles Final"},
+                        "court": {"S": "Centre Court"},
+                        "start_at": {"S":  "2023-09-24T17:00:00Z"},
+                        "ended_at": {"S":  ""},
+                        "in_progress": {"BOOL": false}
+                    }
+                }
+            },
+            {
+                "PutRequest": {
+                    "Item": {
+                        "ID": {"N": "12"},
+                        "SK": {"S": "FIXTURE"},
+                        "tournament_name": {"S": "Veteran Women's Singles Final"},
+                        "court": {"S": "Court 5"},
+                        "start_at": {"S":  "2023-09-24T13:00:00Z"},
+                        "ended_at": {"S":  ""},
+                        "in_progress": {"BOOL": false}
+                    }
+                }
+            },
+            {
+                "PutRequest": {
+                    "Item": {
+                        "ID": {"N": "13"},
+                        "SK": {"S": "FIXTURE"},
+                        "tournament_name": {"S": "Women's Singles Plate"},
+                        "court": {"S": "Court 5"},
+                        "start_at": {"S":  "2023-09-24T15:00:00Z"},
+                        "ended_at": {"S":  ""},
+                        "in_progress": {"BOOL": false}
+                    }
+                }
+            },
+            {
+                "PutRequest": {
+                    "Item": {
+                        "ID": {"N": "14"},
+                        "SK": {"S": "FIXTURE"},
+                        "tournament_name": {"S": "Veteran Men's Doubles Final"},
+                        "court": {"S": "Court 7"},
+                        "start_at": {"S":  "2023-09-24T13:00:00Z"},
+                        "ended_at": {"S":  ""},
+                        "in_progress": {"BOOL": false}
+                    }
+                }
+            },
+            {
+                "PutRequest": {
+                    "Item": {
+                        "ID": {"N": "15"},
+                        "SK": {"S": "FIXTURE"},
+                        "tournament_name": {"S": "Pic 'N' Mix Doubles Final"},
+                        "court": {"S": "Court 7"},
+                        "start_at": {"S":  "2023-09-24T15:00:00Z"},
+                        "ended_at": {"S":  ""},
+                        "in_progress": {"BOOL": false}
+                    }
+                }
+            },
+            {
+                "PutRequest": {
+                    "Item": {
+                        "ID": {"N": "16"},
+                        "SK": {"S": "FIXTURE"},
+                        "tournament_name": {"S": "Women's Over 60s Doubles Final"},
+                        "court": {"S": "Court 7"},
+                        "start_at": {"S":  "2023-09-24T17:00:00Z"},
+                        "ended_at": {"S":  ""},
+                        "in_progress": {"BOOL": false}
+                    }
+                }
+            }
+        ]
+    },
+    "ReturnConsumedCapacity": "TOTAL",
+    "ReturnItemCollectionMetrics": "SIZE"
+}

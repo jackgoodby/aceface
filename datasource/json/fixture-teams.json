@@ -1,0 +1,360 @@
+{
+    "RequestItems": {
+        "aceface-fixture" : [
+            {
+                "PutRequest": {
+                    "Item": {
+                        "ID": {"N": "1"},
+                        "SK": {"S": "TEAMA"},
+                        "seed": {"N": "1"},
+                        "player1": {
+                            "M": {
+                                "title": {"S": "F1A1Title"},
+                                "fname": {"S": "F1A1First"},
+                                "lname": {"S": "F1A1Last"},
+                                "profile_url": {"S": "https://ace-face.co.uk/images/feds.png"}
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "PutRequest": {
+                    "Item": {
+                        "ID": {"N": "1"},
+                        "SK": {"S": "TEAMB"},
+                        "seed": {"N": "0"},
+                        "player1": {
+                            "M": {
+                                "title": {"S": "F1B1Title"},
+                                "fname": {"S": "F1B1First"},
+                                "lname": {"S": "F1B1Last"},
+                                "profile_url": {"S": "https://ace-face.co.uk/images/feds.png"}
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "PutRequest": {
+                    "Item": {
+                        "ID": {"N": "2"},
+                        "SK": {"S": "TEAMA"},
+                        "seed": {"N": "0"},
+                        "player1": {
+                            "M": {
+                                "title": {"S": "F2A1Title"},
+                                "fname": {"S": "F2A1First"},
+                                "lname": {"S": "F2A1Last"},
+                                "profile_url": {"S": "https://ace-face.co.uk/images/feds.png"}
+                            }
+                        },
+                        "player2": {
+                            "M": {
+                                "title": {"S": "F2A2Title"},
+                                "fname": {"S": "F2A2First"},
+                                "lname": {"S": "F2A2Last"},
+                                "profile_url": {"S": "https://ace-face.co.uk/images/feds.png"}
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "PutRequest": {
+                    "Item": {
+                        "ID": {"N": "2"},
+                        "SK": {"S": "TEAMB"},
+                        "seed": {"N": "0"},
+                        "player1": {
+                            "M": {
+                                "title": {"S": "F2B1Title"},
+                                "fname": {"S": "F2B1First"},
+                                "lname": {"S": "F2B1Last"},
+                                "profile_url": {"S": "https://ace-face.co.uk/images/feds.png"}
+                            }
+                        },
+                        "player2": {
+                            "M": {
+                                "title": {"S": "F2B2Title"},
+                                "fname": {"S": "F2B2First"},
+                                "lname": {"S": "F2B2Last"},
+                                "profile_url": {"S": "https://ace-face.co.uk/images/feds.png"}
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "PutRequest": {
+                    "Item": {
+                        "ID": {"N": "3"},
+                        "SK": {"S": "TEAMA"},
+                        "seed": {"N": "0"},
+                        "player1": {
+                            "M": {
+                                "title": {"S": "F3A1Title"},
+                                "fname": {"S": "F3A1First"},
+                                "lname": {"S": "F3A1Last"},
+                                "profile_url": {"S": "https://ace-face.co.uk/images/feds.png"}
+                            }
+                        },
+                        "player2": {
+                            "M": {
+                                "title": {"S": "F3A2Title"},
+                                "fname": {"S": "F3A2First"},
+                                "lname": {"S": "F3A2Last"},
+                                "profile_url": {"S": "https://ace-face.co.uk/images/feds.png"}
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "PutRequest": {
+                    "Item": {
+                        "ID": {"N": "3"},
+                        "SK": {"S": "TEAMB"},
+                        "seed": {"N": "0"},
+                        "player1": {
+                            "M": {
+                                "title": {"S": "F3B1Title"},
+                                "fname": {"S": "F3B1First"},
+                                "lname": {"S": "F3B1Last"},
+                                "profile_url": {"S": "https://ace-face.co.uk/images/feds.png"}
+                            }
+                        },
+                        "player2": {
+                            "M": {
+                                "title": {"S": "F3B2Title"},
+                                "fname": {"S": "F3B2First"},
+                                "lname": {"S": "F3B2Last"},
+                                "profile_url": {"S": "https://ace-face.co.uk/images/feds.png"}
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "PutRequest": {
+                    "Item": {
+                        "ID": {"N": "4"},
+                        "SK": {"S": "TEAMA"},
+                        "seed": {"N": "0"},
+                        "player1": {
+                            "M": {
+                                "title": {"S": "F4A1Title"},
+                                "fname": {"S": "F4A1First"},
+                                "lname": {"S": "F4A1Last"},
+                                "profile_url": {"S": "https://ace-face.co.uk/images/feds.png"}
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "PutRequest": {
+                    "Item": {
+                        "ID": {"N": "4"},
+                        "SK": {"S": "TEAMB"},
+                        "seed": {"N": "0"},
+                        "player1": {
+                            "M": {
+                                "title": {"S": "F4B1Title"},
+                                "fname": {"S": "F4B1First"},
+                                "lname": {"S": "F4B1Last"},
+                                "profile_url": {"S": "https://ace-face.co.uk/images/feds.png"}
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "PutRequest": {
+                    "Item": {
+                        "ID": {"N": "5"},
+                        "SK": {"S": "TEAMA"},
+                        "seed": {"N": "0"},
+                        "player1": {
+                            "M": {
+                                "title": {"S": "F5A1Title"},
+                                "fname": {"S": "F5A1First"},
+                                "lname": {"S": "F5A1Last"},
+                                "profile_url": {"S": "https://ace-face.co.uk/images/feds.png"}
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "PutRequest": {
+                    "Item": {
+                        "ID": {"N": "5"},
+                        "SK": {"S": "TEAMB"},
+                        "seed": {"N": "0"},
+                        "player1": {
+                            "M": {
+                                "title": {"S": "F5B1Title"},
+                                "fname": {"S": "F5B1First"},
+                                "lname": {"S": "F5B1Last"},
+                                "profile_url": {"S": "https://ace-face.co.uk/images/feds.png"}
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "PutRequest": {
+                    "Item": {
+                        "ID": {"N": "6"},
+                        "SK": {"S": "TEAMA"},
+                        "seed": {"N": "0"},
+                        "player1": {
+                            "M": {
+                                "title": {"S": "F6A1Title"},
+                                "fname": {"S": "F6A1First"},
+                                "lname": {"S": "F6A1Last"},
+                                "profile_url": {"S": "https://ace-face.co.uk/images/feds.png"}
+                            }
+                        },
+                        "player2": {
+                            "M": {
+                                "title": {"S": "F6A2Title"},
+                                "fname": {"S": "F6A2First"},
+                                "lname": {"S": "F6A2Last"},
+                                "profile_url": {"S": "https://ace-face.co.uk/images/feds.png"}
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "PutRequest": {
+                    "Item": {
+                        "ID": {"N": "6"},
+                        "SK": {"S": "TEAMB"},
+                        "seed": {"N": "0"},
+                        "player1": {
+                            "M": {
+                                "title": {"S": "F6B1Title"},
+                                "fname": {"S": "F6B1First"},
+                                "lname": {"S": "F6B1Last"},
+                                "profile_url": {"S": "https://ace-face.co.uk/images/feds.png"}
+                            }
+                        },
+                        "player2": {
+                            "M": {
+                                "title": {"S": "F6B2Title"},
+                                "fname": {"S": "F6B2First"},
+                                "lname": {"S": "F6B2Last"},
+                                "profile_url": {"S": "https://ace-face.co.uk/images/feds.png"}
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "PutRequest": {
+                    "Item": {
+                        "ID": {"N": "7"},
+                        "SK": {"S": "TEAMA"},
+                        "seed": {"N": "0"},
+                        "player1": {
+                            "M": {
+                                "title": {"S": "F7A1Title"},
+                                "fname": {"S": "F7A1First"},
+                                "lname": {"S": "F7A1Last"},
+                                "profile_url": {"S": "https://ace-face.co.uk/images/feds.png"}
+                            }
+                        },
+                        "player2": {
+                            "M": {
+                                "title": {"S": "F7A2Title"},
+                                "fname": {"S": "F7A2First"},
+                                "lname": {"S": "F7A2Last"},
+                                "profile_url": {"S": "https://ace-face.co.uk/images/feds.png"}
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "PutRequest": {
+                    "Item": {
+                        "ID": {"N": "7"},
+                        "SK": {"S": "TEAMB"},
+                        "seed": {"N": "0"},
+                        "player1": {
+                            "M": {
+                                "title": {"S": "F7B1Title"},
+                                "fname": {"S": "F7B1First"},
+                                "lname": {"S": "F7B1Last"},
+                                "profile_url": {"S": "https://ace-face.co.uk/images/feds.png"}
+                            }
+                        },
+                        "player2": {
+                            "M": {
+                                "title": {"S": "F7B2Title"},
+                                "fname": {"S": "F7B2First"},
+                                "lname": {"S": "F7B2Last"},
+                                "profile_url": {"S": "https://ace-face.co.uk/images/feds.png"}
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "PutRequest": {
+                    "Item": {
+                        "ID": {"N": "8"},
+                        "SK": {"S": "TEAMA"},
+                        "seed": {"N": "0"},
+                        "player1": {
+                            "M": {
+                                "title": {"S": "F8A1Title"},
+                                "fname": {"S": "F8A1First"},
+                                "lname": {"S": "F8A1Last"},
+                                "profile_url": {"S": "https://ace-face.co.uk/images/feds.png"}
+                            }
+                        },
+                        "player2": {
+                            "M": {
+                                "title": {"S": "F8A2Title"},
+                                "fname": {"S": "F8A2First"},
+                                "lname": {"S": "F8A2Last"},
+                                "profile_url": {"S": "https://ace-face.co.uk/images/feds.png"}
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "PutRequest": {
+                    "Item": {
+                        "ID": {"N": "8"},
+                        "SK": {"S": "TEAMB"},
+                        "seed": {"N": "0"},
+                        "player1": {
+                            "M": {
+                                "title": {"S": "F8B1Title"},
+                                "fname": {"S": "F8B1First"},
+                                "lname": {"S": "F8B1Last"},
+                                "profile_url": {"S": "https://ace-face.co.uk/images/feds.png"}
+                            }
+                        },
+                        "player2": {
+                            "M": {
+                                "title": {"S": "F8B2Title"},
+                                "fname": {"S": "F8B2First"},
+                                "lname": {"S": "F8B2Last"},
+                                "profile_url": {"S": "https://ace-face.co.uk/images/feds.png"}
+                            }
+                        }
+                    }
+                }
+            }
+        ]
+    },
+    "ReturnConsumedCapacity": "TOTAL",
+    "ReturnItemCollectionMetrics": "SIZE"
+}

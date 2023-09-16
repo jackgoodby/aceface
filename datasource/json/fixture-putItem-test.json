@@ -1,0 +1,11 @@
+{
+    "TableName": "aceface-fixture",
+    "Item": {
+        "ID": {
+            "N": "2"
+        },
+        "SK": {
+            "S": "MEEMOO"
+        }
+    }
+}
