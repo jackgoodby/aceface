@@ -11,6 +11,27 @@ Globals:
     Timeout: 5
     MemorySize: 128
 
+Parameters:
+  TABLENAME:
+    Type: String
+    Description: The DynamoDB table for storing Fixture information.
+    Default: 'aceface-fixture'
+
+  REGIONNAME:
+    Type: String
+    Description: Default region for deployment.
+    Default: 'eu-west-2'
+
+  AWSENVNAME:
+    Type: String
+    Description: AWS Environment where code is being executed (AWS_SAM_LOCAL or AWS).
+    Default: 'AWS_SAM_LOCAL'
+
+  DEVENVNAME:
+    Type: String
+    Description: Developer environment where code is being executed (OSX, Windows, or Linux).
+    Default: 'OSX'
+
 Resources:
   GetLiveFixturesFunction:
     Type: AWS::Serverless::Function # More info about Function Resource: https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#awsserverlessfunction
@@ -26,11 +47,32 @@ Resources:
             Method: GET
       Environment: # More info about Env Vars: https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#environment-object
         Variables:
-          PARAM1: VALUE
+          TABLE: !Ref TABLENAME
+          REGION: !Ref REGIONNAME
+          AWSENV: !Ref AWSENVNAME
+          DEVENV: !Ref DEVENVNAME
     Metadata:
       DockerTag: provided.al2-v1
       DockerContext: ./get-live-fixtures
       Dockerfile: Dockerfile
+
+  FixturesTable:
+    Type: AWS::DynamoDB::Table
+    Properties:
+      TableName: !Ref TABLENAME
+      KeySchema:
+        - AttributeName: ID
+          KeyType: HASH
+        - AttributeName: SK
+          KeyType: RANGE
+      AttributeDefinitions:
+        - AttributeName: ID
+          AttributeType: N
+        - AttributeName: SK
+          AttributeType: S
+      BillingMode: PAY_PER_REQUEST
+      StreamSpecification:
+        StreamViewType: NEW_IMAGE
 
 Outputs:
   # ServerlessRestApi is an implicit API created out of Events key under Serverless::Function
@@ -45,3 +87,5 @@ Outputs:
   GetLiveFixturesFunctionIamRole:
     Description: "Implicit IAM Role created for getLiveFixtures function"
     Value: !GetAtt GetLiveFixturesFunctionRole.Arn
+
+

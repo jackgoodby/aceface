@@ -20,6 +20,7 @@ resolve_image_repos = true
 s3_prefix = "aceface"
 region = "eu-west-2"
 disable_rollback = true
+parameter_overrides = "TABLENAME=\"aceface-fixture\" REGIONNAME=\"eu-west-2\" AWSENVNAME=\"AWS\" DEVENVNAME=\"OSX\""
 
 [default.package.parameters]
 resolve_s3 = true
