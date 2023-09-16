@@ -1,0 +1,63 @@
+{
+    "fixtures": [
+        {
+            "id": 1,
+            "start_at": "2023-09-23T13:00:00Z",
+            "ended_at": null,
+            "in_progress": true,
+            "tournament_name": "Ladies' Singles",
+            "team_a": {
+                "id": 1,
+                "seed": 5,
+                "player_1": {
+                    "fname": "Jack",
+                    "fabbr": "Mr. J",
+                    "lname": "Goodby",
+                    "profile_url": "https://ace-face.co.uk/images/feds.png"
+                }
+            },
+            "team_b": {
+                "id": 2,
+                "seed": null,
+                "player_1": {
+                    "fname": "Emma",
+                    "fabbr": "Ms. E",
+                    "lname": "Frankes",
+                    "profile_url": "https://ace-face.co.uk/images/feds.png"
+                },
+                "player_2": {
+                    "fname": "Les",
+                    "fabbr": "Mr. L",
+                    "lname": "Davies",
+                    "profile_url": "https://ace-face.co.uk/images/feds.png"
+                }
+            },
+            "round_id": 1,
+            "court": {
+                "id": 1,
+                "name": "Centre Court"
+            },
+            "winner_id": null,
+            "sets": [
+                {
+                    "id": 1,
+                    "set_number": 1,
+                    "team_a_games": 7,
+                    "team_b_games": 6,
+                    "team_a_tb_points": null,
+                    "team_b_tb_points": null,
+                    "set_length": 38
+                },
+                {
+                    "id": 2,
+                    "set_number": 2,
+                    "team_a_games": 4,
+                    "team_b_games": 3,
+                    "team_a_tb_points": "30",
+                    "team_b_tb_points": "0",
+                    "set_length": 18
+                }
+            ]
+        }
+    ]
+}
