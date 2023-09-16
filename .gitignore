@@ -17,7 +17,11 @@
 # Dependency directories (remove the comment below to include it)
 # vendor/
 
+# SAM
 .aws-sam/*
+
+# Docker
+shared-local-instance.db
 
 # Go workspace file
 go.work
