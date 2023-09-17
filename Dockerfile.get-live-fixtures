@@ -3,7 +3,7 @@ WORKDIR /src
 COPY go.mod go.sum ./
 COPY lambda/get-live-fixtures.go ./main.go
 COPY lambda/model ./model
-RUN go build -o lambda-handler
+COPY tmp/lambda-handler ./
 FROM public.ecr.aws/lambda/provided:al2
 COPY --from=build-image /src/lambda-handler .
 ENTRYPOINT ./lambda-handler

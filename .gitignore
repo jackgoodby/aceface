@@ -19,6 +19,7 @@
 
 # SAM
 .aws-sam/*
+tmp/*
 
 # Docker
 shared-local-instance.db

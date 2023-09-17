@@ -10,6 +10,14 @@ up-app:
 down-app:
 	docker-compose down -v --remove-orphans
 
+build:
+	mkdir -p tmp/
+	cd lambda && GOARCH=amd64 GOOS=linux go build -o ../tmp/lambda-handler
+	sam build
+
+deploy:
+	sam deploy --guided
+
 reset:
 	aws dynamodb delete-table --table-name aceface-fixture --endpoint-url http://localhost:8000
 
