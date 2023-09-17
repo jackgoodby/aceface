@@ -53,8 +53,8 @@ Resources:
           DEVENV: !Ref DEVENVNAME
     Metadata:
       DockerTag: provided.al2-v1
-      DockerContext: ./get-live-fixtures
-      Dockerfile: Dockerfile
+      DockerContext: ./
+      Dockerfile: Dockerfile.get-live-fixtures
 
   FixturesTable:
     Type: AWS::DynamoDB::Table

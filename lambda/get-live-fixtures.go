@@ -4,63 +4,52 @@ import (
 	"encoding/json"
 	"github.com/aws/aws-lambda-go/events"
 	"github.com/aws/aws-lambda-go/lambda"
+	"github.com/jackgoodby/aceface/lambda/model"
 	"log"
 )
-
-type WorkingFixture struct {
-	Id    int  `json:"id"`
-	TeamA Team `json:"team_a"`
-	TeamB Team `json:"team_b"`
-}
 
 func HandleRequest(request events.APIGatewayProxyRequest) (events.APIGatewayProxyResponse, error) {
 
 	//court := Court{Id: 1, Name: "Centre Court"}
 
-	player1 := Player{
+	player1 := model.Player{
 		FirstName:  "Jack",
 		FirstAbbr:  "Mr. J.",
 		LastName:   "Goodby",
 		ProfileUrl: "https://ace-face.co.uk/images/feds.png",
 	}
 
-	player2 := Player{
+	player2 := model.Player{
 		FirstName:  "Annabel",
 		FirstAbbr:  "Ms. A.",
 		LastName:   "Goodby",
 		ProfileUrl: "https://ace-face.co.uk/images/feds.png",
 	}
 
-	player3 := Player{
+	player3 := model.Player{
 		FirstName:  "Manjit",
 		FirstAbbr:  "Mr. M.",
 		LastName:   "Singh",
 		ProfileUrl: "https://ace-face.co.uk/images/feds.png",
 	}
 
-	player4 := Player{
+	player4 := model.Player{
 		FirstName:  "Abi",
 		FirstAbbr:  "Ms. A.",
 		LastName:   "Reeve",
 		ProfileUrl: "https://ace-face.co.uk/images/feds.png",
 	}
 
-	teamA := Team{
+	teamA := model.Team{
 		Id: 1,
 		//Seed:    5,
-		Players: []Player{player1, player2},
+		Players: []model.Player{player1, player2},
 	}
 
-	teamB := Team{
+	teamB := model.Team{
 		Id: 2,
 		//Seed:    3,
-		Players: []Player{player3, player4},
-	}
-
-	fixture := WorkingFixture{
-		Id:    1,
-		TeamA: teamA,
-		TeamB: teamB,
+		Players: []model.Player{player3, player4},
 	}
 
 	response, err := json.Marshal(fixture)

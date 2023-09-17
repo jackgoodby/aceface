@@ -8,7 +8,7 @@ This is a sample template for aceface - Below is a brief explanation of what we 
 ├── hello-world                 <-- Source code for a lambda function
 │   ├── main.go                 <-- Lambda function code
 │   └── main_test.go            <-- Unit tests
-│   └── Dockerfile              <-- Dockerfile
+│   └── Dockerfile.get-live-fixtures              <-- Dockerfile.get-live-fixtures
 └── template.yaml
 ```
 
