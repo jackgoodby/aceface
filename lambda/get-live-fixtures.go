@@ -19,40 +19,40 @@ func HandleRequest(request events.APIGatewayProxyRequest) (events.APIGatewayProx
 		ProfileUrl: "https://ace-face.co.uk/images/feds.png",
 	}
 
-	player2 := model.Player{
-		FirstName:  "Annabel",
-		FirstAbbr:  "Ms. A.",
-		LastName:   "Goodby",
-		ProfileUrl: "https://ace-face.co.uk/images/feds.png",
-	}
+	//player2 := model.Player{
+	//	FirstName:  "Annabel",
+	//	FirstAbbr:  "Ms. A.",
+	//	LastName:   "Goodby",
+	//	ProfileUrl: "https://ace-face.co.uk/images/feds.png",
+	//}
+	//
+	//player3 := model.Player{
+	//	FirstName:  "Manjit",
+	//	FirstAbbr:  "Mr. M.",
+	//	LastName:   "Singh",
+	//	ProfileUrl: "https://ace-face.co.uk/images/feds.png",
+	//}
+	//
+	//player4 := model.Player{
+	//	FirstName:  "Abi",
+	//	FirstAbbr:  "Ms. A.",
+	//	LastName:   "Reeve",
+	//	ProfileUrl: "https://ace-face.co.uk/images/feds.png",
+	//}
 
-	player3 := model.Player{
-		FirstName:  "Manjit",
-		FirstAbbr:  "Mr. M.",
-		LastName:   "Singh",
-		ProfileUrl: "https://ace-face.co.uk/images/feds.png",
-	}
+	//teamA := model.Team{
+	//	Id: 1,
+	//	//Seed:    5,
+	//	Players: []model.Player{player1, player2},
+	//}
+	//
+	//teamB := model.Team{
+	//	Id: 2,
+	//	//Seed:    3,
+	//	Players: []model.Player{player3, player4},
+	//}
 
-	player4 := model.Player{
-		FirstName:  "Abi",
-		FirstAbbr:  "Ms. A.",
-		LastName:   "Reeve",
-		ProfileUrl: "https://ace-face.co.uk/images/feds.png",
-	}
-
-	teamA := model.Team{
-		Id: 1,
-		//Seed:    5,
-		Players: []model.Player{player1, player2},
-	}
-
-	teamB := model.Team{
-		Id: 2,
-		//Seed:    3,
-		Players: []model.Player{player3, player4},
-	}
-
-	response, err := json.Marshal(fixture)
+	response, err := json.Marshal(player1)
 	responseCode := 200
 
 	//req.Header.Set("Content-Type", "application/json")
