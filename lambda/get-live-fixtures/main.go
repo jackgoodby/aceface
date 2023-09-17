@@ -11,11 +11,6 @@ type Tournament struct {
 	Name string `json:"name"`
 }
 
-type Court struct {
-	Id   int    `json:"id"`
-	Name string `json:"name"`
-}
-
 type Team struct {
 	Id      int      `json:"id"`
 	Seed    int      `json:"seed"`
