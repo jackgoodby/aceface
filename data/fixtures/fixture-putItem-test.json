@@ -1,5 +1,5 @@
 {
-    "TableName": "aceface-fixture",
+    "TableName": "fixture",
     "Item": {
         "ID": {
             "N": "2"

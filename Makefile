@@ -19,13 +19,13 @@ deploy:
 	sam deploy --guided
 
 reset:
-	aws dynamodb delete-table --table-name aceface-fixture --endpoint-url http://localhost:8000
+	aws dynamodb delete-table --table-name fixture --endpoint-url http://localhost:8000
 
 create-table:
-	aws dynamodb create-table --cli-input-json file://datasource/json/create-table-fixture.json --endpoint-url http://localhost:8000
+	aws dynamodb create-table --cli-input-json file://data/fixtures/create-table-fixture.json --endpoint-url http://localhost:8000
 
 fixtures:
-	aws dynamodb batch-write-item --cli-input-json file://datasource/json/fixture-fixtures.json --endpoint-url http://localhost:8000
+	aws dynamodb batch-write-item --cli-input-json file://data/fixtures/fixture-fixtures.json --endpoint-url http://localhost:8000
 
 teams:
-	aws dynamodb batch-write-item --cli-input-json file://datasource/json/fixture-teams.json --endpoint-url http://localhost:8000
+	aws dynamodb batch-write-item --cli-input-json file://data/fixtures/fixture-teams.json --endpoint-url http://localhost:8000

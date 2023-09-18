@@ -1,22 +1,22 @@
 {
-    "TableName": "aceface-fixture",
+    "TableName": "fixture",
     "KeySchema": [
         {
-            "AttributeName": "ID",
+            "AttributeName": "id",
             "KeyType": "HASH"
         },
         {
-            "AttributeName": "SK",
+            "AttributeName": "sort_key",
             "KeyType": "RANGE"
         }
     ],
     "AttributeDefinitions": [
         {
-            "AttributeName": "ID",
-            "AttributeType": "N"
+            "AttributeName": "id",
+            "AttributeType": "S"
         },
         {
-            "AttributeName": "SK",
+            "AttributeName": "sort_key",
             "AttributeType": "S"
         }
     ],
