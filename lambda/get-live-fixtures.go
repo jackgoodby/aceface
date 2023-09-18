@@ -1,74 +1,44 @@
 package main
 
 import (
+	"context"
 	"encoding/json"
 	"github.com/aws/aws-lambda-go/events"
 	"github.com/aws/aws-lambda-go/lambda"
-	"github.com/jackgoodby/aceface/lambda/model"
+	"github.com/aws/aws-sdk-go-v2/config"
+	"github.com/aws/aws-sdk-go-v2/service/dynamodb"
+	"github.com/jackgoodby/aceface/lambda/actions"
 	"log"
 )
 
 func HandleRequest(request events.APIGatewayProxyRequest) (events.APIGatewayProxyResponse, error) {
 
-	//court := Court{Id: 1, Name: "Centre Court"}
-
-	player1 := model.Player{
-		FirstName:  "Jack",
-		FirstAbbr:  "Mr. J.",
-		LastName:   "Goodby",
-		ProfileUrl: "https://ace-face.co.uk/images/feds.png",
-	}
-
-	//player2 := model.Player{
-	//	FirstName:  "Annabel",
-	//	FirstAbbr:  "Ms. A.",
-	//	LastName:   "Goodby",
-	//	ProfileUrl: "https://ace-face.co.uk/images/feds.png",
-	//}
-	//
-	//player3 := model.Player{
-	//	FirstName:  "Manjit",
-	//	FirstAbbr:  "Mr. M.",
-	//	LastName:   "Singh",
-	//	ProfileUrl: "https://ace-face.co.uk/images/feds.png",
-	//}
-	//
-	//player4 := model.Player{
-	//	FirstName:  "Abi",
-	//	FirstAbbr:  "Ms. A.",
-	//	LastName:   "Reeve",
-	//	ProfileUrl: "https://ace-face.co.uk/images/feds.png",
-	//}
-
-	//teamA := model.Team{
-	//	Id: 1,
-	//	//Seed:    5,
-	//	Players: []model.Player{player1, player2},
-	//}
-	//
-	//teamB := model.Team{
-	//	Id: 2,
-	//	//Seed:    3,
-	//	Players: []model.Player{player3, player4},
-	//}
-
-	response, err := json.Marshal(player1)
 	responseCode := 200
 
-	//req.Header.Set("Content-Type", "application/json")
+	tableName := "fixture"
 
+	cfg, err := config.LoadDefaultConfig(context.TODO(),
+		config.WithRegion("eu-west-2"),
+	)
+	if err != nil {
+		log.Fatalf("unable to load SDK config, %v", err)
+	}
+
+	fixtureActions := actions.FixtureActions{
+		TableName:      tableName,
+		DynamoDbClient: dynamodb.NewFromConfig(cfg)}
+
+	fixture, err := fixtureActions.GetFixture("FIXTURE1", "FIXTURE")
+	if err != nil {
+		log.Fatalf("failed to get fixture, %v", err)
+	}
+
+	response, err := json.Marshal(fixture)
 	if err != nil {
 		log.Println(err)
 		response = []byte("Internal Server Error")
 		responseCode = 500
 	}
-	//{
-	//	"isBase64Encoded": true|false,
-	//	"statusCode": httpStatusCode,
-	//	"headers": { "headerName": "headerValue", ... },
-	//	"multiValueHeaders": { "headerName": ["headerValue", "headerValue2", ...], ... },
-	//  "body": "..."
-	//}
 
 	return events.APIGatewayProxyResponse{
 		Body:       string(response),
