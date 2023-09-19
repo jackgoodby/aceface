@@ -5,18 +5,30 @@ import (
 	"encoding/json"
 	"github.com/aws/aws-lambda-go/events"
 	"github.com/aws/aws-lambda-go/lambda"
+	"github.com/aws/aws-sdk-go-v2/aws"
 	"github.com/aws/aws-sdk-go-v2/config"
 	"github.com/aws/aws-sdk-go-v2/service/dynamodb"
 	"github.com/jackgoodby/aceface/lambda/actions"
 	"log"
+	"os"
 )
+
+func GetDynamoDBClient(cfg aws.Config) *dynamodb.Client {
+	client := dynamodb.NewFromConfig(cfg)
+
+	if "AWS_SAM_LOCAL" == os.Getenv("AWSENV") {
+		client = dynamodb.NewFromConfig(cfg, func(options *dynamodb.Options) {
+			options.BaseEndpoint = aws.String("http://host.docker.internal:8000")
+		})
+	}
+
+	return client
+}
 
 func HandleRequest(request events.APIGatewayProxyRequest) (events.APIGatewayProxyResponse, error) {
 
-	// do something to get the fixture from the API query
+	// process request to get
 	queryFixture := "FIXTURE1"
-
-	responseCode := 200
 
 	cfg, err := config.LoadDefaultConfig(context.TODO(),
 		config.WithRegion("eu-west-2"),
@@ -26,7 +38,7 @@ func HandleRequest(request events.APIGatewayProxyRequest) (events.APIGatewayProx
 	}
 
 	fixtureActions := actions.FixtureActions{
-		DClient: dynamodb.NewFromConfig(cfg),
+		DClient: GetDynamoDBClient(cfg),
 	}
 
 	fixture, err := fixtureActions.GetFixtureById(queryFixture)
@@ -34,6 +46,8 @@ func HandleRequest(request events.APIGatewayProxyRequest) (events.APIGatewayProx
 		log.Fatalf("failed to get fixture, %v", err)
 	}
 
+	// build response
+	responseCode := 200
 	response, err := json.Marshal(fixture)
 	if err != nil {
 		log.Println(err)
