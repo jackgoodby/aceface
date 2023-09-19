@@ -24,5 +24,5 @@ func (fixture Fixture) GetKey() map[string]types.AttributeValue {
 	if err != nil {
 		panic(err)
 	}
-	return map[string]types.AttributeValue{"ID": id, "SK": sk}
+	return map[string]types.AttributeValue{"id": id, "sort_key": sk}
 }

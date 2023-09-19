@@ -1,11 +1,11 @@
 {
     "TableName": "fixture",
     "Item": {
-        "ID": {
-            "N": "2"
+        "id": {
+            "S": "FIXTURE1"
         },
-        "SK": {
-            "S": "MEEMOO"
+        "sort_key": {
+            "S": "FIXTURE"
         }
     }
 }
