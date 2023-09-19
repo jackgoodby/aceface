@@ -13,9 +13,10 @@ import (
 
 func HandleRequest(request events.APIGatewayProxyRequest) (events.APIGatewayProxyResponse, error) {
 
-	responseCode := 200
+	// do something to get the fixture from the API query
+	queryFixture := "FIXTURE1"
 
-	tableName := "fixture"
+	responseCode := 200
 
 	cfg, err := config.LoadDefaultConfig(context.TODO(),
 		config.WithRegion("eu-west-2"),
@@ -25,10 +26,10 @@ func HandleRequest(request events.APIGatewayProxyRequest) (events.APIGatewayProx
 	}
 
 	fixtureActions := actions.FixtureActions{
-		TableName:      tableName,
-		DynamoDbClient: dynamodb.NewFromConfig(cfg)}
+		DClient: dynamodb.NewFromConfig(cfg),
+	}
 
-	fixture, err := fixtureActions.GetFixture("FIXTURE1", "FIXTURE")
+	fixture, err := fixtureActions.GetFixtureById(queryFixture)
 	if err != nil {
 		log.Fatalf("failed to get fixture, %v", err)
 	}
