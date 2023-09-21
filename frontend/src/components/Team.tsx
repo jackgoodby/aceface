@@ -12,7 +12,7 @@ interface Player {
 }
 
 const playerJson: Player = {
-  titleMoo: "TITLE",
+  title: "TITLE",
   lastName: "LAST NAME",
   seed: "1",
   profileUrl: "/images/feds.png",

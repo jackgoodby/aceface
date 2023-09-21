@@ -47,17 +47,17 @@ func HandleRequest(request events.APIGatewayProxyRequest) (events.APIGatewayProx
 	}
 
 	// build response
-	responseCode := 200
+	statusCode := 200
 	response, err := json.Marshal(fixture)
 	if err != nil {
 		log.Println(err)
 		response = []byte("Internal Server Error")
-		responseCode = 500
+		statusCode = 500
 	}
 
 	return events.APIGatewayProxyResponse{
 		Body:       string(response),
-		StatusCode: responseCode,
+		StatusCode: statusCode,
 	}, nil
 }
 

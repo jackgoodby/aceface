@@ -6,7 +6,7 @@ function Fixtures() {
   return (
     <div id="fixtures">
       {fixtureData.map((item) => (
-        <Fixture />
+        <Fixture key={item} />
       ))}
     </div>
   );
