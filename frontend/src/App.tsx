@@ -1,12 +1,14 @@
-import Fixture from './Fixture';
-import Player from './components/Team';
+import Fixtures from './components/Fixtures';
 
 function App() {
-    return <div><Fixture />
-        <div className="players">
-            <Player />
-            <Player />
+    return (
+        <div id={"app"}>
+            <div id="banner">
+                <img src="public/images/sltc-logo.png" alt="Stourbridge Tennis Club Logo" width="50" />
+            </div>
+            <Fixtures />
         </div>
-    </div>;
+    )
 }
+
 export default App;
