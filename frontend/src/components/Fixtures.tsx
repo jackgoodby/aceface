@@ -52,6 +52,6 @@ export default class Fixtures extends Component {
         <FixturePanel fixtureData={this.state.responseData} />
       );
     }
-    return <div className="fixtures">{fixturePanelComponent}</div>;
+    return <div id="fixtures">{fixturePanelComponent}</div>;
   }
 }
