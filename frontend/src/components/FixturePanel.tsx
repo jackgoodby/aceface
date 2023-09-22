@@ -1,6 +1,8 @@
 import React from "react";
 import Team from "./Team";
 import formatFriendlyMatchTime from "../utils/FriendlyTime";
+import { PlayerData } from "../types/PlayerData";
+import { TeamData } from "../types/TeamData";
 
 interface FixturePanelProps {
   fixtureData?: FixtureData;
@@ -16,6 +18,45 @@ interface FixtureData {
   in_progress?: string;
   tournament_name?: string;
 }
+
+//
+// set up some temp data for team
+//
+const Player1: PlayerData = {
+  title: "Ms. J.",
+  lastName: "Skym",
+  seed: 1,
+};
+const Player2: PlayerData = {
+  title: "Ms. J.",
+  lastName: "Brayshay",
+  seed: 1,
+};
+const Player3: PlayerData = {
+  title: "Ms. L.",
+  lastName: "Hathaway",
+};
+const Player4: PlayerData = {
+  title: "Ms. A.",
+  lastName: "Reeve",
+};
+const TeamA: TeamData = {
+  id: "ID",
+  sort_key: "TEAMA",
+  seed: 1,
+  player1: Player1,
+  player2: Player2,
+};
+const TeamB: TeamData = {
+  id: "ID",
+  sort_key: "TEAMB",
+  seed: 99,
+  player1: Player3,
+  player2: Player4,
+};
+//
+// end team data setup
+//
 
 export default function FixturePanel(props: FixturePanelProps) {
   console.log(props);
@@ -34,8 +75,8 @@ export default function FixturePanel(props: FixturePanelProps) {
           <div className="fixture-name">
             {props.fixtureData?.tournament_name}
           </div>
-          <Team teamName="teama" />
-          <Team teamName="teamb" />
+          <Team teamData={TeamA} />
+          <Team teamData={TeamB} />
           <div className="fixture-status">
             <div className="duration">{friendlyTime}</div>
           </div>

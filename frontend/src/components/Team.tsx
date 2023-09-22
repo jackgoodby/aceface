@@ -1,31 +1,19 @@
 import Player from "./Player";
+import { TeamData } from "../types/TeamData";
 
-interface Props {
-  teamName: string;
+interface TeamProps {
+  teamData?: TeamData;
 }
 
-interface Player {
-  title: string;
-  lastName: string;
-  seed: string;
-  profileUrl: string;
-}
-
-const playerJson: Player = {
-  title: "TITLE",
-  lastName: "LAST NAME",
-  seed: "1",
-  profileUrl: "/images/feds.png",
-};
-
-function Team(props: Props) {
-  const player1 = true;
-  const player2 = true;
+function Team(props: TeamProps) {
+  const player2 = props.teamData?.player2;
   return (
-    <div className={"team " + props.teamName}>
+    <div className={"team " + props.teamData?.sort_key}>
       <div className="players">
-        <Player playerJson={playerJson} />
-        {player2 && <Player playerJson={playerJson} />}
+        <Player playerData={props.teamData?.player1} />
+        {props.teamData?.player2 && (
+          <Player playerData={props.teamData?.player2} />
+        )}
       </div>
       <div className="scores">
         <span className="point">40</span>

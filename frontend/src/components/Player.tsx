@@ -1,20 +1,20 @@
-interface Props {
-  playerJson: {
-    title: string;
-    lastName: string;
-    seed: string;
-    profileUrl: string;
-  };
+import { PlayerData } from "../types/PlayerData";
+import React from "react";
+
+interface PlayerProps {
+  playerData?: PlayerData;
 }
 
-function Player(props: Props) {
+function Player(props: PlayerProps) {
   return (
     <div className="player">
-      <img src={props.playerJson.profileUrl} className="playerimage" />
-      {props.playerJson.title}
-      <br />
-      {props.playerJson.lastName}
-      <span className="seed"> ({props.playerJson.seed})</span>
+      {props.playerData?.profileUrl && (
+        <img src={props.playerData?.profileUrl} className="playerimage" />
+      )}
+      {props.playerData?.title} {props.playerData?.lastName}
+      {props.playerData?.seed && (
+        <span className="seed"> ({props.playerData?.seed})</span>
+      )}
     </div>
   );
 }
