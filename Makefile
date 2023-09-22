@@ -27,5 +27,8 @@ create-table:
 fixtures:
 	aws dynamodb batch-write-item --cli-input-json file://data/fixtures/fixture-fixtures.json --endpoint-url http://localhost:8000
 
-teams:
-	aws dynamodb batch-write-item --cli-input-json file://data/fixtures/fixture-teams.json --endpoint-url http://localhost:8000
+teams1:
+	aws dynamodb batch-write-item --cli-input-json file://data/fixtures/fixture-teams1.json --endpoint-url http://localhost:8000
+
+teams2:
+	aws dynamodb batch-write-item --cli-input-json file://data/fixtures/fixture-teams2.json --endpoint-url http://localhost:8000

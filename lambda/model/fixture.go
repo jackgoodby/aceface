@@ -6,13 +6,14 @@ import (
 )
 
 type Fixture struct {
-	Id             string `json:"json_id" dynamodbav:"id"`
-	SortKey        string `json:"json_sort_key" dynamodbav:"sort_key"`
-	StartAt        string `json:"json_start_at" dynamodbav:"start_at,omitempty"`
-	EndedAt        string `json:"json_ended_at" dynamodbav:"ended_at,omitempty"`
-	Court          int64  `json:"json_court" dynamodbav:"court,omitempty"`
-	InProgress     bool   `json:"json_in_progress" dynamodbav:"in_progress,omitempty"`
-	TournamentName string `json:"json_tournament_name" dynamodbav:"tournament_name,omitempty"`
+	Id               string `json:"id" dynamodbav:"id"`
+	SortKey          string `json:"sort_key" dynamodbav:"sort_key"`
+	ScheduledStartAt string `json:"scheduled_start_at" dynamodbav:"scheduled_start_at,omitempty"`
+	ActualStartAt    string `json:"actual_start_at" dynamodbav:"actual_start_at,omitempty"`
+	EndedAt          string `json:"ended_at" dynamodbav:"ended_at,omitempty"`
+	Court            int64  `json:"court" dynamodbav:"court,omitempty"`
+	InProgress       bool   `json:"in_progress" dynamodbav:"in_progress,omitempty"`
+	TournamentName   string `json:"tournament_name" dynamodbav:"tournament_name,omitempty"`
 }
 
 func (f Fixture) GetTableName() string {

@@ -6,12 +6,12 @@
                     "Item": {
                         "id": {"S": "FIXTURE1"},
                         "sort_key": {"S": "TEAMA"},
-                        "seed": {"N": "1"},
+                        "seed": {"N": "2"},
                         "player1": {
                             "M": {
-                                "title": {"S": "F1A1Title"},
+                                "title": {"S": "Ms. N."},
                                 "first_name": {"S": "F1A1First"},
-                                "last_name": {"S": "F1A1Last"},
+                                "last_name": {"S": "Hatton"},
                                 "profile_url": {"S": "https://ace-face.co.uk/images/feds.png"}
                             }
                         }
@@ -23,12 +23,12 @@
                     "Item": {
                         "id": {"S": "FIXTURE1"},
                         "sort_key": {"S": "TEAMB"},
-                        "seed": {"N": "0"},
+                        "seed": {"N": "1"},
                         "player1": {
                             "M": {
-                                "title": {"S": "F1B1Title"},
+                                "title": {"S": "Ms. M."},
                                 "first_name": {"S": "F1B1First"},
-                                "last_name": {"S": "F1B1Last"},
+                                "last_name": {"S": "Oddland"},
                                 "profile_url": {"S": "https://ace-face.co.uk/images/feds.png"}
                             }
                         }
@@ -40,20 +40,20 @@
                     "Item": {
                         "id": {"S": "FIXTURE2"},
                         "sort_key": {"S": "TEAMA"},
-                        "seed": {"N": "0"},
+                        "seed": {"N": "2"},
                         "player1": {
                             "M": {
-                                "title": {"S": "F2A1Title"},
+                                "title": {"S": "Mr. R."},
                                 "first_name": {"S": "F2A1First"},
-                                "last_name": {"S": "F2A1Last"},
+                                "last_name": {"S": "Banno"},
                                 "profile_url": {"S": "https://ace-face.co.uk/images/feds.png"}
                             }
                         },
                         "player2": {
                             "M": {
-                                "title": {"S": "F2A2Title"},
+                                "title": {"S": "Mr. S."},
                                 "first_name": {"S": "F2A2First"},
-                                "last_name": {"S": "F2A2Last"},
+                                "last_name": {"S": "Hathaway"},
                                 "profile_url": {"S": "https://ace-face.co.uk/images/feds.png"}
                             }
                         }
@@ -65,20 +65,20 @@
                     "Item": {
                         "id": {"S": "FIXTURE2"},
                         "sort_key": {"S": "TEAMB"},
-                        "seed": {"N": "0"},
+                        "seed": {"N": "1"},
                         "player1": {
                             "M": {
-                                "title": {"S": "F2B1Title"},
+                                "title": {"S": "Mr. A."},
                                 "first_name": {"S": "F2B1First"},
-                                "last_name": {"S": "F2B1Last"},
+                                "last_name": {"S": "Mentjes"},
                                 "profile_url": {"S": "https://ace-face.co.uk/images/feds.png"}
                             }
                         },
                         "player2": {
                             "M": {
-                                "title": {"S": "F2B2Title"},
+                                "title": {"S": "Mr. C."},
                                 "first_name": {"S": "F2B2First"},
-                                "last_name": {"S": "F2B2Last"},
+                                "last_name": {"S": "Hill"},
                                 "profile_url": {"S": "https://ace-face.co.uk/images/feds.png"}
                             }
                         }
@@ -93,17 +93,17 @@
                         "seed": {"N": "0"},
                         "player1": {
                             "M": {
-                                "title": {"S": "F3A1Title"},
+                                "title": {"S": "Mr. D."},
                                 "first_name": {"S": "F3A1First"},
-                                "last_name": {"S": "F3A1Last"},
+                                "last_name": {"S": "McEwan"},
                                 "profile_url": {"S": "https://ace-face.co.uk/images/feds.png"}
                             }
                         },
                         "player2": {
                             "M": {
-                                "title": {"S": "F3A2Title"},
+                                "title": {"S": "Mr. T."},
                                 "first_name": {"S": "F3A2First"},
-                                "last_name": {"S": "F3A2Last"},
+                                "last_name": {"S": "Powell"},
                                 "profile_url": {"S": "https://ace-face.co.uk/images/feds.png"}
                             }
                         }
@@ -118,17 +118,17 @@
                         "seed": {"N": "0"},
                         "player1": {
                             "M": {
-                                "title": {"S": "F3B1Title"},
+                                "title": {"S": "Mr. M."},
                                 "first_name": {"S": "F3B1First"},
-                                "last_name": {"S": "F3B1Last"},
+                                "last_name": {"S": "Hammond"},
                                 "profile_url": {"S": "https://ace-face.co.uk/images/feds.png"}
                             }
                         },
                         "player2": {
                             "M": {
-                                "title": {"S": "F3B2Title"},
+                                "title": {"S": "Mr. M."},
                                 "first_name": {"S": "F3B2First"},
-                                "last_name": {"S": "F3B2Last"},
+                                "last_name": {"S": "Clinton"},
                                 "profile_url": {"S": "https://ace-face.co.uk/images/feds.png"}
                             }
                         }
@@ -143,9 +143,9 @@
                         "seed": {"N": "0"},
                         "player1": {
                             "M": {
-                                "title": {"S": "F4A1Title"},
+                                "title": {"S": "Mr. J."},
                                 "first_name": {"S": "F4A1First"},
-                                "last_name": {"S": "F4A1Last"},
+                                "last_name": {"S": "Adams"},
                                 "profile_url": {"S": "https://ace-face.co.uk/images/feds.png"}
                             }
                         }
@@ -160,9 +160,9 @@
                         "seed": {"N": "0"},
                         "player1": {
                             "M": {
-                                "title": {"S": "F4B1Title"},
+                                "title": {"S": "Mr. P."},
                                 "first_name": {"S": "F4B1First"},
-                                "last_name": {"S": "F4B1Last"},
+                                "last_name": {"S": "Mainprice"},
                                 "profile_url": {"S": "https://ace-face.co.uk/images/feds.png"}
                             }
                         }
@@ -177,9 +177,9 @@
                         "seed": {"N": "0"},
                         "player1": {
                             "M": {
-                                "title": {"S": "F5A1Title"},
+                                "title": {"S": "Mr. D."},
                                 "first_name": {"S": "F5A1First"},
-                                "last_name": {"S": "F5A1Last"},
+                                "last_name": {"S": "Homer"},
                                 "profile_url": {"S": "https://ace-face.co.uk/images/feds.png"}
                             }
                         }
@@ -191,12 +191,12 @@
                     "Item": {
                         "id": {"S": "FIXTURE5"},
                         "sort_key": {"S": "TEAMB"},
-                        "seed": {"N": "0"},
+                        "seed": {"N": "3"},
                         "player1": {
                             "M": {
-                                "title": {"S": "F5B1Title"},
+                                "title": {"S": "Mr. J."},
                                 "first_name": {"S": "F5B1First"},
-                                "last_name": {"S": "F5B1Last"},
+                                "last_name": {"S": "Boyle"},
                                 "profile_url": {"S": "https://ace-face.co.uk/images/feds.png"}
                             }
                         }
@@ -208,6 +208,31 @@
                     "Item": {
                         "id": {"S": "FIXTURE6"},
                         "sort_key": {"S": "TEAMA"},
+                        "seed": {"N": "1"},
+                        "player1": {
+                            "M": {
+                                "title": {"S": "Ms. J."},
+                                "first_name": {"S": "Jo"},
+                                "last_name": {"S": "Skym"},
+                                "profile_url": {"S": "https://ace-face.co.uk/images/feds.png"}
+                            }
+                        },
+                        "player2": {
+                            "M": {
+                                "title": {"S": "Mr. M."},
+                                "first_name": {"S": "??"},
+                                "last_name": {"S": "Luckley"},
+                                "profile_url": {"S": "https://ace-face.co.uk/images/feds.png"}
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "PutRequest": {
+                    "Item": {
+                        "id": {"S": "FIXTURE6"},
+                        "sort_key": {"S": "TEAMB"},
                         "seed": {"N": "0"},
                         "player1": {
                             "M": {
@@ -231,74 +256,49 @@
             {
                 "PutRequest": {
                     "Item": {
-                        "id": {"S": "FIXTURE6"},
-                        "sort_key": {"S": "TEAMB"},
-                        "seed": {"N": "0"},
+                        "id": {"S": "FIXTURE7"},
+                        "sort_key": {"S": "TEAMA"},
+                        "seed": {"N": "2"},
                         "player1": {
                             "M": {
+                                "title": {"S": "Ms. K."},
+                                "first_name": {"S": "F7A1First"},
+                                "last_name": {"S": "Hill"},
+                                "profile_url": {"S": "https://ace-face.co.uk/images/feds.png"}
+                            }
+                        },
+                        "player2": {
+                            "M": {
+                                "title": {"S": "Ms. T."},
+                                "first_name": {"S": "F7A2First"},
+                                "last_name": {"S": "Jones"},
+                                "profile_url": {"S": "https://ace-face.co.uk/images/feds.png"}
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "PutRequest": {
+                    "Item": {
+                        "id": {"S": "FIXTURE7"},
+                        "sort_key": {"S": "TEAMB"},
+                        "seed": {"N": "1"},
+                        "player1": {
+                            "M": {
+                                "title": {"S": "Ms. H."},
+                                "first_name": {"S": "F7B1First"},
+                                "last_name": {"S": "Walker"},
+                                "profile_url": {"S": "https://ace-face.co.uk/images/feds.png"}
+                            }
+                        },
+                        "player2": {
+                            "M": {
                                 "title": {"S": "Ms. J."},
-                                "first_name": {"S": "Jo"},
+                                "first_name": {"S": "F7B2First"},
                                 "last_name": {"S": "Skym"},
                                 "profile_url": {"S": "https://ace-face.co.uk/images/feds.png"}
                             }
-                        },
-                        "player2": {
-                            "M": {
-                                "title": {"S": "Mr. M."},
-                                "first_name": {"S": "Michael"},
-                                "last_name": {"S": "Luckley"},
-                                "profile_url": {"S": "https://ace-face.co.uk/images/feds.png"}
-                            }
-                        }
-                    }
-                }
-            },
-            {
-                "PutRequest": {
-                    "Item": {
-                        "id": {"S": "FIXTURE7"},
-                        "sort_key": {"S": "TEAMA"},
-                        "seed": {"N": "0"},
-                        "player1": {
-                            "M": {
-                                "title": {"S": "F7A1Title"},
-                                "first_name": {"S": "F7A1First"},
-                                "last_name": {"S": "F7A1Last"},
-                                "profile_url": {"S": "https://ace-face.co.uk/images/feds.png"}
-                            }
-                        },
-                        "player2": {
-                            "M": {
-                                "title": {"S": "F7A2Title"},
-                                "first_name": {"S": "F7A2First"},
-                                "last_name": {"S": "F7A2Last"},
-                                "profile_url": {"S": "https://ace-face.co.uk/images/feds.png"}
-                            }
-                        }
-                    }
-                }
-            },
-            {
-                "PutRequest": {
-                    "Item": {
-                        "id": {"S": "FIXTURE7"},
-                        "sort_key": {"S": "TEAMB"},
-                        "seed": {"N": "0"},
-                        "player1": {
-                            "M": {
-                                "title": {"S": "F7B1Title"},
-                                "first_name": {"S": "F7B1First"},
-                                "last_name": {"S": "F7B1Last"},
-                                "profile_url": {"S": "https://ace-face.co.uk/images/feds.png"}
-                            }
-                        },
-                        "player2": {
-                            "M": {
-                                "title": {"S": "F7B2Title"},
-                                "first_name": {"S": "F7B2First"},
-                                "last_name": {"S": "F7B2Last"},
-                                "profile_url": {"S": "https://ace-face.co.uk/images/feds.png"}
-                            }
                         }
                     }
                 }
@@ -311,17 +311,17 @@
                         "seed": {"N": "0"},
                         "player1": {
                             "M": {
-                                "title": {"S": "F8A1Title"},
+                                "title": {"S": "Mr. A."},
                                 "first_name": {"S": "F8A1First"},
-                                "last_name": {"S": "F8A1Last"},
+                                "last_name": {"S": "Eaton"},
                                 "profile_url": {"S": "https://ace-face.co.uk/images/feds.png"}
                             }
                         },
                         "player2": {
                             "M": {
-                                "title": {"S": "F8A2Title"},
-                                "first_name": {"S": "F8A2First"},
-                                "last_name": {"S": "F8A2Last"},
+                                "title": {"S": "??"},
+                                "first_name": {"S": "Ms. J."},
+                                "last_name": {"S": "Eaton"},
                                 "profile_url": {"S": "https://ace-face.co.uk/images/feds.png"}
                             }
                         }
@@ -336,17 +336,17 @@
                         "seed": {"N": "0"},
                         "player1": {
                             "M": {
-                                "title": {"S": "F8B1Title"},
+                                "title": {"S": "Mr. J."},
                                 "first_name": {"S": "F8B1First"},
-                                "last_name": {"S": "F8B1Last"},
+                                "last_name": {"S": "Bartlett"},
                                 "profile_url": {"S": "https://ace-face.co.uk/images/feds.png"}
                             }
                         },
                         "player2": {
                             "M": {
-                                "title": {"S": "F8B2Title"},
+                                "title": {"S": "Ms. V."},
                                 "first_name": {"S": "F8B2First"},
-                                "last_name": {"S": "F8B2Last"},
+                                "last_name": {"S": "Molineaux"},
                                 "profile_url": {"S": "https://ace-face.co.uk/images/feds.png"}
                             }
                         }
