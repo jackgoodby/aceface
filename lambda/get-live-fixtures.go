@@ -55,8 +55,15 @@ func HandleRequest(request events.APIGatewayProxyRequest) (events.APIGatewayProx
 		statusCode = 500
 	}
 
+	//map[string]string
+	headers := make(map[string]string)
+	headers["Access-Control-Allow-Headers"] = "X-Forwarded-For, content-type, Access-Control-Allow-Origin"
+	headers["Access-Control-Allow-Methods"] = "GET,PUT,POST,PATCH,OPTIONS"
+	headers["Access-Control-Allow-Origin"] = "*"
+
 	return events.APIGatewayProxyResponse{
 		Body:       string(response),
+		Headers:    headers,
 		StatusCode: statusCode,
 	}, nil
 }
