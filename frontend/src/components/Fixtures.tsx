@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import axios from "axios";
-import Fixture from "./Fixture";
+import FixturePanel from "./FixturePanel";
 
 const config = {
   headers: {
@@ -47,7 +47,7 @@ class Fixtures extends Component {
 
     return (
       <div id="fixtures">
-        <Fixture fixtureData={liveFixtures} />
+        <FixturePanel fixtureData={liveFixtures} />
       </div>
     );
   }

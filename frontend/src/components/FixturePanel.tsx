@@ -1,12 +1,12 @@
 import React from "react";
-import ReactTimeAgo from "react-time-ago";
 import Team from "./Team";
+import formatFriendlyMatchTime from "../utils/FriendlyTime";
 
-interface Props {
-  fixtureData: Fixture;
+interface FixturePanelProps {
+  fixtureData: FixtureData;
 }
 
-interface Fixture {
+interface FixtureData {
   json_id: string;
   json_sort_key: string;
   json_start_at: string;
@@ -16,20 +16,8 @@ interface Fixture {
   json_tournament_name: string;
 }
 
-function msToTime(duration: number) {
-  const minutes = Math.floor((duration / (1000 * 60)) % 60),
-    hours = Math.floor((duration / (1000 * 60 * 60)) % 24);
-  const displayHours = hours < 10 ? "0" + hours : hours;
-  const displayMinutes = minutes < 10 ? "0" + minutes : minutes;
-  return hours + " hour " + minutes + " minutes";
-}
-
-function Fixture(props: Props) {
-  // const eventStartTime = new Date(props.fixtureData.json_start_at);
-  const eventStartTime = new Date("2023-09-22T04:00:00");
-  const eventEndTime = Date.now();
-  const duration = eventEndTime.valueOf() - eventStartTime.valueOf();
-  const friendlyTime = msToTime(duration);
+export default function FixturePanel(props: FixturePanelProps) {
+  const friendlyTime = formatFriendlyMatchTime(props.fixtureData.json_start_at);
   return (
     <div className="fixture">
       <div className="fixture-title-bar">
@@ -50,5 +38,3 @@ function Fixture(props: Props) {
     </div>
   );
 }
-
-export default Fixture;
