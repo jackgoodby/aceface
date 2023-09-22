@@ -1,4 +1,8 @@
-export default function formatFriendlyMatchTime(eventStartTime: string) {
+export default function formatFriendlyMatchTime(eventStartTime?: string) {
+  if (eventStartTime === undefined) {
+    return "";
+  }
+
   const start = new Date(eventStartTime);
 
   if (Date.now() < start.valueOf()) {

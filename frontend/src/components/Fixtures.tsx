@@ -11,18 +11,18 @@ const config = {
 
 const url = import.meta.env.VITE_API_URL + "/fixtures";
 
-class Fixtures extends Component {
+export default class Fixtures extends Component {
   state = {
     error: false,
     loading: false,
-    liveFixtures: {},
+    responseData: {},
   };
 
-  async getLiveFixtures() {
+  async getResponseData() {
     this.setState({ loading: true });
     try {
       const response = await axios.get(url, config);
-      this.setState({ liveFixtures: response.data });
+      this.setState({ responseData: response.data });
     } catch (error) {
       this.setState({ error: true });
     } finally {
@@ -31,26 +31,27 @@ class Fixtures extends Component {
   }
 
   componentDidMount() {
-    this.getLiveFixtures();
+    this.getResponseData();
   }
 
   render() {
-    const { error, loading, liveFixtures } = this.state;
+    const { error, loading, responseData } = this.state;
 
     if (loading) {
-      return <div className="spinner">LOADING</div>; // add a spinner or something until the posts are loaded
+      return <div className="fixture-title-bar">Checking live data...</div>;
     }
 
     if (error) {
       return <div className="error">Something went wrong</div>;
     }
 
-    return (
-      <div id="fixtures">
-        <FixturePanel fixtureData={liveFixtures} />
-      </div>
-    );
+    // handle async
+    let fixturePanelComponent = null;
+    if (!this.state.loading) {
+      fixturePanelComponent = (
+        <FixturePanel fixtureData={this.state.responseData} />
+      );
+    }
+    return <div className="fixtures">{fixturePanelComponent}</div>;
   }
 }
-
-export default Fixtures;
