@@ -38,7 +38,11 @@ export default class Fixtures extends Component {
     const { error, loading, responseData } = this.state;
 
     if (loading) {
-      return <div className="fixture-title-bar">Checking live data...</div>;
+      return (
+        <div id="fixtures">
+          <div className="fixture-title-bar">Checking live data...</div>
+        </div>
+      );
     }
 
     if (error) {

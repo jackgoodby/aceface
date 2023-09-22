@@ -22,6 +22,7 @@ export default function FixturePanel(props: FixturePanelProps) {
   const friendlyTime = formatFriendlyMatchTime(
     props.fixtureData?.scheduled_start_at,
     props.fixtureData?.actual_start_at,
+    props.fixtureData?.ended_at,
   );
   return (
     <div className="fixture">

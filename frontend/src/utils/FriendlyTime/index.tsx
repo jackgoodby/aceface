@@ -1,11 +1,18 @@
-export default function formatFriendlyMatchTime(eventStartTime?: string) {
-  if (eventStartTime === undefined) {
-    return "";
+export default function formatFriendlyMatchTime(
+  scheduledStart?: string,
+  actualStart?: string,
+  endedAt?: string,
+) {
+  let display = "";
+
+  if (scheduledStart === undefined) {
+    //something's gone badly wrong
+    return display;
   }
 
-  const start = new Date(eventStartTime);
-
-  if (Date.now() < start.valueOf()) {
+  if (!actualStart) {
+    // no start time/not started yet, so just display scheduled start
+    const start = new Date(scheduledStart);
     const day = start.toLocaleDateString("en-GB", {
       weekday: "long",
     });
@@ -22,16 +29,38 @@ export default function formatFriendlyMatchTime(eventStartTime?: string) {
       minute: "numeric",
     });
 
-    return "Starts: " + day + " " + date + suffix + " " + month + " " + time;
+    display = "Starts: " + day + " " + date + suffix + " " + month + " " + time;
   } else {
-    const durationInMs = Date.now() - start.valueOf();
-    const minutes = Math.floor((durationInMs / (1000 * 60)) % 60),
-      hours = Math.floor((durationInMs / (1000 * 60 * 60)) % 24);
-    const displayHours = hours > 0 ? hours.toString() + " hours, " : hours;
-    if (hours > 0) {
-      return "Duration: " + displayHours + " hour " + minutes + " minutes";
+    // there is a start time - it's begin
+    const startEpochMs = new Date(actualStart).valueOf();
+
+    let prefix = "";
+    let endEpochMs: number = 0;
+
+    if (endedAt) {
+      // match is also ended
+      endEpochMs = new Date(endedAt).valueOf();
+      prefix = "Match ended. Time: ";
     } else {
-      return "Duration: " + minutes + " minutes";
+      endEpochMs = Date.now();
+      prefix = "Duration: ";
+    }
+
+    const durationMs = endEpochMs - startEpochMs;
+
+    console.log(startEpochMs);
+    console.log(endEpochMs);
+    console.log(durationMs);
+
+    const minutes = Math.floor((durationMs / (1000 * 60)) % 60),
+      hours = Math.floor((durationMs / (1000 * 60 * 60)) % 24);
+    if (hours == 0) {
+      display = prefix + minutes + " minutes";
+    } else if (hours == 1) {
+      display = prefix + hours + " hour,  " + minutes + " minutes";
+    } else {
+      display = prefix + hours + " hours,  " + minutes + " minutes";
     }
   }
+  return display;
 }
