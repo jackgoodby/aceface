@@ -7,6 +7,7 @@ import fixture4 from "../data/D1-CT5-1";
 import fixture5 from "../data/D1-CT5-2";
 import fixture6 from "../data/D1-CT7-1";
 import fixture7 from "../data/D1-CT7-2";
+import fixture8 from "../data/D1-CT7-3";
 
 export default function Matches() {
   return (
@@ -15,6 +16,7 @@ export default function Matches() {
       <FlatMatch matchData={fixture5} />
       <FlatMatch matchData={fixture7} />
       <FlatMatch matchData={fixture3} />
+      <FlatMatch matchData={fixture8} />
       <FlatMatch matchData={fixture1} />
       <FlatMatch matchData={fixture4} />
       <FlatMatch matchData={fixture6} />

@@ -1,0 +1,39 @@
+import { MatchData } from "../types/MatchData";
+
+const fixture8: MatchData = {
+  scheduled_start_at: "2023-09-23T15:45:00Z",
+  actual_start_at: "",
+  ended_at: "",
+  court: "7",
+  tournament_name: "Mixed Doubles Plate Final",
+  team_a: {
+    id: "teama",
+    players: [
+      {
+        title: "Mr. A.",
+        last_name: "Eaton",
+      },
+      {
+        title: "Ms. J.",
+        last_name: "Eaton",
+      },
+    ],
+    scores: [],
+  },
+  team_b: {
+    id: "teamb",
+    players: [
+      {
+        title: "Ms. V.",
+        last_name: "Molineaux",
+      },
+      {
+        title: "Mr. J.",
+        last_name: "Bartlett",
+      },
+    ],
+    scores: [],
+  },
+};
+
+export default fixture8;
