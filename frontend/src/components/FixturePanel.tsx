@@ -63,7 +63,9 @@ export default function FixturePanel(props: FixturePanelProps) {
     props.fixtureData?.actual_start_at,
     props.fixtureData?.ended_at,
   );
-  const startStatusClass = " not-started";
+  const startStatusClass = props.fixtureData?.actual_start_at
+    ? " started"
+    : " not-started";
   const courtName =
     props.fixtureData?.court == "1"
       ? "Centre Court"

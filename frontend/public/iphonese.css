@@ -1,0 +1,126 @@
+#root {
+    padding: 10px;
+}
+
+#banner{
+    padding: 20px 0 10px 0;
+}
+
+#banner img {
+    width: 75px;
+}
+
+#fixtures{
+}
+
+.fixture{
+    margin-bottom: 30px;
+}
+
+.fixture-title-bar{
+    margin-bottom: 7px;
+    font-size: 24px;
+}
+
+.fixture-card{
+    border-radius: 10px;
+    padding: 10px 0;
+}
+
+.fixture-card-wrap{
+    margin: 0 0 0 10px;
+    width: 94%;
+}
+
+.fixture-status{
+    margin: 20px 0px 0 0px;
+}
+
+.fixture-status .duration{
+    font-size: 18px;
+}
+
+.fixture-name {
+    margin: 0 0 12px 0;
+    font-size: 24px;
+}
+
+.teama{
+    padding-bottom: 12px;
+    border-bottom: 2px dotted #cccccc;
+}
+
+.teamb{
+    margin-top: 12px;
+}
+
+.players {
+    width: 60%;
+}
+
+.player{
+    overflow: hidden;
+    font-size: 19px;
+}
+.player.doubles{
+    font-size: 19px;
+}
+.player.doubles:last-of-type {
+    padding-top: 6px;
+}
+
+
+.player img{
+    float: left;
+    width: 45px;
+    height: 45px;
+    max-width: 45px;
+    margin: -6px 10px 0 0;
+    border-radius: 50%;
+}
+
+.seed{
+    font-size: 1em;
+}
+
+.player.player2{
+    margin-top: 5px;
+}
+
+.scores{
+    width: 40%;
+}
+
+.teama .scores {
+    bottom: 13px;
+}
+
+.teamb .scores {
+    top: -2px;
+}
+
+.scores span {
+    width: 22px;
+    max-width: 44px;
+    font-size: 40px;
+    margin-right: 16px;
+}
+
+.scores span.set-game:last-of-type {
+    margin-right: 0;
+    width: 28px;
+}
+
+.scores .point {
+    margin-right: 21px;
+    width: 38px;
+}
+
+.desc {
+    background: #ccc;
+    color: #000;
+}
+
+.desc:before {
+    content: "Browsers <= 375px width";
+}

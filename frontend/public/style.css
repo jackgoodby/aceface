@@ -46,18 +46,20 @@ body {
     top: 0;
     width: 100%;
     background-color: #05406f;
-    padding: 20px 0 10px 0;
     text-align: center;
     z-index: 10000;
 }
 
+#banner img {
+}
+
 #fixtures{
-    margin: 15px 10px 0 10px;
     float: left;
+    width: 100%;
+    margin: 15px 0 0 0;
 }
 
 .fixture{
-    margin-bottom: 30px;
     float: left;
     width: 100%;
 }
@@ -66,47 +68,33 @@ body {
     float: left;
     width: 100%;
     color: #fff;
-    margin-bottom: 7px;
     font-family: Avenir, "ralewaylight", sans-serif;
-    font-size: 24px;
 }
 
 .fixture-card{
     background-color: #fff;
     float: left;
     width: 100%;
-    border-radius: 10px;
-    padding: 10px 0;
 }
 
 .fixture-card-wrap{
     float: left;
-    margin: 0 0 0 10px;
-    width: 94%;
 }
 
 .fixture-status{
     clear: left;
     float: left;
-    margin: 20px 0px 0 0px;
-    font-family: Avenir, "ralewaylight", sans-serif;
+    font-family: "Avenir light", sans-serif;
     color: #999;
     width: 100%;
 }
 
 .fixture-status .duration{
-    float: left;
-    font-size: 18px;
-}
-
-.fixture-status .completed{
-    float: right;
+    text-align: center;
 }
 
 .fixture-name{
-    margin: 0 0 10px 0;
-    font-family: "avenir", "ralewaymedium", sans-serif;
-    font-size: 1.4em;
+    font-family: Avenir, "ralewaymedium", sans-serif;
     text-align: center;
     color: #000;
 }
@@ -116,85 +104,53 @@ body {
     width: 100%;
     clear: left;
     position: relative;
-    /*background-color: darkorange;*/
 }
 .teama{
-    padding-bottom: 12px;
-    border-bottom: 2px dotted #cccccc;
 }
-
 .teamb{
-    margin-top: 7px;
 }
 
 .players {
     float: left;
-    width: 60%;
-    /*background: #ff0;*/
 }
 
 .player{
     float: left;
     width: 100%;
-    padding-top: 6px;
-    /*background: #cf7fcf;*/
-    overflow: hidden;
-    font-family: "ralewayregular", sans-serif;
-    font-size: 0.9em;
+    font-family: "ralewayregular", Avenir, sans-serif;
 }
 .player.doubles{
-    font-size: 1.2em;
 }
-.player img{
-    float: left;
-    width: 45px;
-    height: 45px;
-    max-width: 45px;
-    margin: -6px 10px 0 0;
-    border-radius: 50%;
+.player img {
 }
 
 .seed{
     color: #05406f;
-    font-family: "ralewaymedium", sans-serif;
-    font-size: 1em;
+    font-family: "ralewaylight", Avenir, sans-serif;
 }
 
 .player.player2{
-    margin-top: 5px;
 }
 
 .scores{
     float: left;
-    width: 40%;
-}
-
-.scores{
-    float: left;
-    width: 40%;
 }
 
 .teama .scores {
     position: absolute;
-    bottom: 13px;
     right: 0;
 }
 
 .teamb .scores {
     position: absolute;
-    top: 4px;
     right: 0;
 }
 
 .scores span {
     display: block;
     float: left;
-    width: 22px;
-    max-width: 44px;
     font-family: "sf_pro_displaylight", Avenir, sans-serif;
-    font-size: 2.5em;
     text-align: center;
-    margin-right: 16px;
 }
 
 .not-started .scores{
@@ -202,13 +158,9 @@ body {
 }
 
 .scores span.set-game:last-of-type {
-    margin-right: 0;
-    width: 28px;
 }
 
 .scores .point {
-    margin-right: 21px;
-    width: 38px;
 }
 
 
@@ -247,6 +199,16 @@ body {
 
     .desc:after {
         content: " In fact, it's between 500px and 600px wide.";
+    }
+}
+
+@media (min-width: 2560px) {
+    h1 {
+        color: fuchsia;
+    }
+
+    .desc:after {
+        content: " 4K telly baby";
     }
 }
 
