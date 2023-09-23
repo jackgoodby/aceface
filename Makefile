@@ -12,7 +12,8 @@ down-app:
 
 build:
 	mkdir -p tmp/
-	cd lambda && GOARCH=amd64 GOOS=linux go build -o ../tmp/lambda-handler
+	cd lambda && GOARCH=amd64 GOOS=linux go build -o ../tmp/get-live-fixtures-lambda-handler
+	cd lambda/get-fixture-score && GOARCH=amd64 GOOS=linux go build -o ../../tmp/get-fixture-score-lambda-handler
 	sam build
 
 deploy:
@@ -32,3 +33,6 @@ teams1:
 
 teams2:
 	aws dynamodb batch-write-item --cli-input-json file://data/fixtures/fixture-teams2.json --endpoint-url http://localhost:8000
+
+scores:
+	aws dynamodb batch-write-item --cli-input-json file://data/fixtures/fixture-scores.json --endpoint-url http://localhost:8000

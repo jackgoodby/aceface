@@ -63,6 +63,31 @@ Resources:
       DockerTag: provided.al2-v1
       DockerContext: ./
       Dockerfile: Dockerfile.get-live-fixtures
+  GetFixtureScoreFunction:
+    Type: AWS::Serverless::Function # More info about Function Resource: https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#awsserverlessfunction
+    Properties:
+      PackageType: Image
+      Policies:
+        - DynamoDBCrudPolicy:
+            TableName: !Ref FixturesTable
+      Architectures:
+        - x86_64
+      Events:
+        CatchAll:
+          Type: Api # More info about API Event Source: https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#api
+          Properties:
+            Path: /fixtures/{id}/score
+            Method: GET
+      Environment: # More info about Env Vars: https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#environment-object
+        Variables:
+          TABLE: !Ref FixturesTable
+          REGION: !Ref REGIONNAME
+          AWSENV: !Ref AWSENVNAME
+          DEVENV: !Ref DEVENVNAME
+    Metadata:
+      DockerTag: provided.al2-v1
+      DockerContext: ./
+      Dockerfile: Dockerfile.get-fixture-score
 
   FixturesTable:
     Type: AWS::DynamoDB::Table

@@ -8,6 +8,7 @@ interface TeamProps {
 function Team(props: TeamProps) {
   const player1 = props.teamData?.players[0];
   const player2 = props.teamData?.players[1];
+  // const set1score = props.teamData?.scores;
   return (
     <div className={"team " + props.teamData?.sort_key?.toLowerCase()}>
       <div className={"players"}>
@@ -15,9 +16,9 @@ function Team(props: TeamProps) {
         {player2 && <Player playerData={player2} />}
       </div>
       <div className="scores">
-        <span className="set-game">6</span>
-        <span className="set-game">6</span>
-        <span className="set-game">6</span>
+        <span className="set-game">-</span>
+        <span className="set-game">-</span>
+        <span className="set-game">-</span>
       </div>
     </div>
   );

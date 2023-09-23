@@ -25,10 +25,7 @@ func GetDynamoDBClient(cfg aws.Config) *dynamodb.Client {
 	return client
 }
 
-func HandleGetLiveFixturesRequest(request events.APIGatewayProxyRequest) (events.APIGatewayProxyResponse, error) {
-
-	// process request to get
-	queryFixture := "FIXTURE1"
+func HandleGetFixtureScoreRequest(request events.APIGatewayProxyRequest) (events.APIGatewayProxyResponse, error) {
 
 	cfg, err := config.LoadDefaultConfig(context.TODO(),
 		config.WithRegion("eu-west-2"),
@@ -41,14 +38,14 @@ func HandleGetLiveFixturesRequest(request events.APIGatewayProxyRequest) (events
 		DClient: GetDynamoDBClient(cfg),
 	}
 
-	fixture, err := fixtureActions.GetFixtureById(queryFixture)
+	score, err := fixtureActions.GetFixtureScore(request.PathParameters["id"])
 	if err != nil {
 		log.Fatalf("failed to get fixture, %v", err)
 	}
 
 	// build response
 	statusCode := 200
-	response, err := json.Marshal(fixture)
+	response, err := json.Marshal(score)
 	if err != nil {
 		log.Println(err)
 		response = []byte("Internal Server Error")
@@ -68,5 +65,5 @@ func HandleGetLiveFixturesRequest(request events.APIGatewayProxyRequest) (events
 }
 
 func main() {
-	lambda.Start(HandleGetLiveFixturesRequest)
+	lambda.Start(HandleGetFixtureScoreRequest)
 }

@@ -57,3 +57,26 @@ func (a FixtureActions) GetFixtureById(id string) (model.Fixture, error) {
 
 	return fixture, err
 }
+
+func (a FixtureActions) GetFixtureScore(id string) (model.Score, error) {
+
+	score := model.Score{Id: id, SortKey: "SCORE"}
+
+	// Get single item from DB
+	response, err := a.DClient.GetItem(context.TODO(),
+		&dynamodb.GetItemInput{
+			TableName: aws.String(score.GetTableName()),
+			Key:       score.GetKey(),
+		},
+	)
+	if err != nil {
+		log.Printf("Couldn't get fixture %v. Here's why: %v\n", id, err)
+	} else {
+		err = attributevalue.UnmarshalMap(response.Item, &score)
+		if err != nil {
+			log.Printf("Couldn't unmarshal response. Here's why: %v\n", err)
+		}
+	}
+
+	return score, err
+}

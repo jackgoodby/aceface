@@ -3,54 +3,36 @@ import Team from "./Team";
 import formatFriendlyMatchTime from "../utils/FriendlyTime";
 import { PlayerData } from "../types/PlayerData";
 import { TeamData } from "../types/TeamData";
+import { FixtureData } from "../types/FixtureData";
 
 interface FixturePanelProps {
   fixtureData?: FixtureData;
-}
-
-interface FixtureData {
-  id?: string;
-  sort_key?: string;
-  scheduled_start_at?: string;
-  actual_start_at?: string;
-  ended_at?: string;
-  court?: string;
-  in_progress?: string;
-  tournament_name?: string;
 }
 
 //
 // set up some temp data for team
 //
 const Player1: PlayerData = {
-  title: "Ms. J.",
-  last_name: "Skym",
-  seed: 1,
+  title: "Ms. N.",
+  last_name: "Hatton",
+  seed: 2,
 };
 const Player2: PlayerData = {
-  title: "Ms. J.",
-  last_name: "Brayshay",
+  title: "Ms. M.",
+  last_name: "Oddland",
   seed: 1,
-};
-const Player3: PlayerData = {
-  title: "Ms. L.",
-  last_name: "Hathaway",
-};
-const Player4: PlayerData = {
-  title: "Ms. A.",
-  last_name: "Reeve",
 };
 const TeamA: TeamData = {
   id: "ID",
   sort_key: "TEAMA",
-  seed: 1,
-  players: [Player1, Player2],
+  seed: 2,
+  players: [Player1],
 };
 const TeamB: TeamData = {
   id: "ID",
   sort_key: "TEAMB",
-  seed: 0,
-  players: [Player3, Player4],
+  seed: 1,
+  players: [Player2],
 };
 //
 // end team data setup

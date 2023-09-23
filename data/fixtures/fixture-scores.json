@@ -1,0 +1,44 @@
+{
+    "RequestItems": {
+        "fixture" : [
+            {
+                "PutRequest": {
+                    "Item": {
+                        "id": {"S": "FIXTURE1"},
+                        "sort_key": {"S": "SCORE"},
+                        "team_a_sets": {
+                            "M": {
+                                "1": {"M": {
+                                    "score": {"N":  "7"},
+                                    "tiebreak_score": {"N":  "7"}
+                                }},
+                                "2": {"M": {
+                                    "score": {"N":  "2"}
+                                }},
+                                "3": {"M": {
+                                    "score": {"N":  "10"}
+                                }}
+                            }
+                        },
+                        "team_b_sets": {
+                            "M": {
+                                "1": {"M": {
+                                    "score": {"N":  "6"},
+                                    "tiebreak_score": {"N":  "4"}
+                                }},
+                                "2": {"M": {
+                                    "score": {"N":  "6"}
+                                }},
+                                "3": {"M": {
+                                    "score": {"N":  "7"}
+                                }}
+                            }
+                        }
+                    }
+                }
+            }
+        ]
+    },
+    "ReturnConsumedCapacity": "TOTAL",
+    "ReturnItemCollectionMetrics": "SIZE"
+}
