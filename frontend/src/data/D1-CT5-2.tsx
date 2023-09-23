@@ -3,7 +3,7 @@ import { MatchData } from "../types/MatchData";
 const fixture5: MatchData = {
   scheduled_start_at: "2023-09-23T14:00:00Z",
   actual_start_at: "2023-09-23T14:12:00Z",
-  ended_at: "",
+  ended_at: "2023-09-23T15:30:00Z",
   court: "5",
   tournament_name: "Veteran Men's Singles Final",
   team_a: {
@@ -25,7 +25,7 @@ const fixture5: MatchData = {
         seed: 3,
       },
     ],
-    scores: [6],
+    scores: [6, 6],
   },
 };
 

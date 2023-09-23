@@ -1,7 +1,7 @@
 import { MatchData } from "../types/MatchData";
 
 const fixture3: MatchData = {
-  scheduled_start_at: "2023-09-23T15:45:00Z",
+  scheduled_start_at: "2023-09-23T16:00:00Z",
   actual_start_at: "",
   ended_at: "",
   court: "1",
