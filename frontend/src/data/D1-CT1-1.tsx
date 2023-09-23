@@ -2,8 +2,8 @@ import { MatchData } from "../types/MatchData";
 
 const fixture1: MatchData = {
   scheduled_start_at: "2023-09-23T12:00:00Z",
-  actual_start_at: "",
-  ended_at: "",
+  actual_start_at: "2023-09-23T12:00:00Z",
+  ended_at: "2023-09-23T13:20:00Z",
   court: "1",
   tournament_name: "Ladies' Singles Final",
   team_a: {
@@ -15,7 +15,7 @@ const fixture1: MatchData = {
         seed: 2,
       },
     ],
-    scores: [],
+    scores: [3, 4],
   },
   team_b: {
     id: "teamb",
@@ -26,7 +26,7 @@ const fixture1: MatchData = {
         seed: 1,
       },
     ],
-    scores: [],
+    scores: [6, 6],
   },
 };
 
