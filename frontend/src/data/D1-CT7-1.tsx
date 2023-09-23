@@ -2,8 +2,8 @@ import { MatchData } from "../types/MatchData";
 
 const fixture6: MatchData = {
   scheduled_start_at: "2023-09-23T12:00:00Z",
-  actual_start_at: "",
-  ended_at: "",
+  actual_start_at: "2023-09-23T12:00:00Z",
+  ended_at: "2023-09-23T13:30:00Z",
   court: "7",
   tournament_name: "Veteran Mixed Doubles Final",
   team_a: {
@@ -18,7 +18,7 @@ const fixture6: MatchData = {
         last_name: "Hathaway",
       },
     ],
-    scores: [],
+    scores: [3, 1],
   },
   team_b: {
     id: "teamb",
@@ -32,7 +32,7 @@ const fixture6: MatchData = {
         last_name: "Luckley",
       },
     ],
-    scores: [],
+    scores: [6, 6],
   },
 };
 
