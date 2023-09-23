@@ -36,7 +36,7 @@ const fixture7: MatchData = {
         seed: 1,
       },
     ],
-    scores: [6, 1],
+    scores: [6, 2],
   },
 };
 
