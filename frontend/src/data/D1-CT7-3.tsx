@@ -3,7 +3,7 @@ import { MatchData } from "../types/MatchData";
 const fixture8: MatchData = {
   scheduled_start_at: "2023-09-23T16:00:00Z",
   actual_start_at: "2023-09-23T16:00:00Z",
-  ended_at: "",
+  ended_at: "2023-09-23T17:30:00Z",
   court: "7",
   tournament_name: "Mixed Doubles Plate Final",
   team_a: {
@@ -18,7 +18,7 @@ const fixture8: MatchData = {
         last_name: "Eaton",
       },
     ],
-    scores: [7, 5],
+    scores: [7, 6],
   },
   team_b: {
     id: "teamb",
