@@ -1,4 +1,4 @@
-import Fixtures from "./components/Fixtures";
+import Matches from "./components/Matches";
 
 function App() {
   return (
@@ -10,7 +10,7 @@ function App() {
           width="50"
         />
       </div>
-      <Fixtures />
+      <Matches />
     </>
   );
 }

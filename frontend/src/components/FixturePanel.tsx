@@ -1,7 +1,6 @@
 import React from "react";
 import Team from "./Team";
 import formatFriendlyMatchTime from "../utils/FriendlyTime";
-import { PlayerData } from "../types/PlayerData";
 import { TeamData } from "../types/TeamData";
 import { FixtureData } from "../types/FixtureData";
 
@@ -12,27 +11,29 @@ interface FixturePanelProps {
 //
 // set up some temp data for team
 //
-const Player1: PlayerData = {
-  title: "Ms. N.",
-  last_name: "Hatton",
-  seed: 2,
-};
-const Player2: PlayerData = {
-  title: "Ms. M.",
-  last_name: "Oddland",
-  seed: 1,
-};
 const TeamA: TeamData = {
   id: "ID",
   sort_key: "TEAMA",
   seed: 2,
-  players: [Player1],
+  players: [
+    {
+      title: "Ms. N.",
+      last_name: "Hatton",
+      seed: 2,
+    },
+  ],
 };
 const TeamB: TeamData = {
   id: "ID",
   sort_key: "TEAMB",
   seed: 1,
-  players: [Player2],
+  players: [
+    {
+      title: "Ms. M.",
+      last_name: "Oddland",
+      seed: 1,
+    },
+  ],
 };
 //
 // end team data setup
