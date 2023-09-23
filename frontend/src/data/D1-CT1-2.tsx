@@ -3,7 +3,7 @@ import { MatchData } from "../types/MatchData";
 const fixture2: MatchData = {
   scheduled_start_at: "2023-09-23T14:00:00Z",
   actual_start_at: "2023-09-23T14:09:00Z",
-  ended_at: "",
+  ended_at: "2023-09-23T15:15:00Z",
   court: "1",
   tournament_name: "Men's Doubles Final",
   team_a: {
@@ -20,7 +20,7 @@ const fixture2: MatchData = {
         seed: 2,
       },
     ],
-    scores: [4, 0],
+    scores: [4, 1],
   },
   team_b: {
     id: "teamb",
@@ -36,7 +36,7 @@ const fixture2: MatchData = {
         seed: 1,
       },
     ],
-    scores: [6, 3],
+    scores: [6, 6],
   },
 };
 
