@@ -20,7 +20,7 @@ const fixture2: MatchData = {
         seed: 2,
       },
     ],
-    scores: [2],
+    scores: [4],
   },
   team_b: {
     id: "teamb",
