@@ -2,7 +2,7 @@ import { MatchData } from "../types/MatchData";
 
 const fixture3: MatchData = {
   scheduled_start_at: "2023-09-23T16:00:00Z",
-  actual_start_at: "",
+  actual_start_at: "2023-09-23T16:00:00Z",
   ended_at: "",
   court: "1",
   tournament_name: "Men's Over 60s Doubles Final",
@@ -18,7 +18,7 @@ const fixture3: MatchData = {
         last_name: "Powell",
       },
     ],
-    scores: [],
+    scores: [3],
   },
   team_b: {
     id: "teamb",
@@ -34,7 +34,7 @@ const fixture3: MatchData = {
         seed: 1,
       },
     ],
-    scores: [],
+    scores: [1],
   },
 };
 
