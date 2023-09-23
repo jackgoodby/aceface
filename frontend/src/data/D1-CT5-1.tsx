@@ -2,8 +2,8 @@ import { MatchData } from "../types/MatchData";
 
 const fixture4: MatchData = {
   scheduled_start_at: "2023-09-23T12:00:00Z",
-  actual_start_at: "",
-  ended_at: "",
+  actual_start_at: "2023-09-23T12:00:00Z",
+  ended_at: "2023-09-23T13:40:00Z",
   court: "5",
   tournament_name: "Men's Singles Plate Final",
   team_a: {
@@ -14,7 +14,7 @@ const fixture4: MatchData = {
         last_name: "Adams",
       },
     ],
-    scores: [],
+    scores: [3, 6],
   },
   team_b: {
     id: "teamb",
@@ -24,7 +24,7 @@ const fixture4: MatchData = {
         last_name: "Mainprice",
       },
     ],
-    scores: [],
+    scores: [6, 7],
   },
 };
 
