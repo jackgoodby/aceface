@@ -15,18 +15,18 @@ const fixture1: MatchData = {
         seed: 2,
       },
     ],
-    scores: [3],
+    scores: [],
   },
   team_b: {
     id: "teamb",
     players: [
       {
         title: "Ms. M.",
-        last_name: "Oddland",
+        last_name: "Odland",
         seed: 1,
       },
     ],
-    scores: [3],
+    scores: [],
   },
 };
 

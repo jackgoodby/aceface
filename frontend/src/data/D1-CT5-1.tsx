@@ -4,29 +4,27 @@ const fixture4: MatchData = {
   scheduled_start_at: "2023-09-23T12:00:00Z",
   actual_start_at: "",
   ended_at: "",
-  court: "1",
-  tournament_name: "Ladies' Singles Final",
+  court: "5",
+  tournament_name: "Men's Singles Plate Final",
   team_a: {
     id: "teama",
     players: [
       {
-        title: "Ms. N.",
-        last_name: "Hatton",
-        seed: 2,
+        title: "Mr. J.",
+        last_name: "Adams",
       },
     ],
-    scores: [3],
+    scores: [],
   },
   team_b: {
     id: "teamb",
     players: [
       {
-        title: "Ms. M.",
-        last_name: "Oddland",
-        seed: 1,
+        title: "Mr. P.",
+        last_name: "Mainprice",
       },
     ],
-    scores: [3],
+    scores: [],
   },
 };
 

@@ -4,29 +4,35 @@ const fixture6: MatchData = {
   scheduled_start_at: "2023-09-23T12:00:00Z",
   actual_start_at: "",
   ended_at: "",
-  court: "1",
-  tournament_name: "Ladies' Singles Final",
+  court: "7",
+  tournament_name: "Veteran Mixed Doubles Final",
   team_a: {
     id: "teama",
     players: [
       {
-        title: "Ms. N.",
-        last_name: "Hatton",
-        seed: 2,
+        title: "Ms. L.",
+        last_name: "Hathaway",
+      },
+      {
+        title: "Mr. S.",
+        last_name: "Hathaway",
       },
     ],
-    scores: [3],
+    scores: [],
   },
   team_b: {
     id: "teamb",
     players: [
       {
-        title: "Ms. M.",
-        last_name: "Oddland",
-        seed: 1,
+        title: "Ms. J.",
+        last_name: "Skym",
+      },
+      {
+        title: "Mr. M.",
+        last_name: "Luckley",
       },
     ],
-    scores: [3],
+    scores: [],
   },
 };
 
