@@ -2,7 +2,7 @@ import { MatchData } from "../types/MatchData";
 
 const fixture2: MatchData = {
   scheduled_start_at: "2023-09-23T14:00:00Z",
-  actual_start_at: "",
+  actual_start_at: "2023-09-23T14:09:00Z",
   ended_at: "",
   court: "1",
   tournament_name: "Men's Doubles Final",
