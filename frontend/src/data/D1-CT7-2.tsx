@@ -12,10 +12,12 @@ const fixture7: MatchData = {
       {
         title: "Ms. K.",
         last_name: "Hill",
+        seed: 2,
       },
       {
         title: "Ms. T.",
         last_name: "Jones",
+        seed: 2,
       },
     ],
     scores: [],
@@ -26,13 +28,15 @@ const fixture7: MatchData = {
       {
         title: "Ms. H.",
         last_name: "Walker",
+        seed: 1,
       },
       {
         title: "Ms. J.",
         last_name: "Skym",
+        seed: 1,
       },
     ],
-    scores: [],
+    scores: [1],
   },
 };
 
