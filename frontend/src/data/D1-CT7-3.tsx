@@ -32,7 +32,7 @@ const fixture8: MatchData = {
         last_name: "Bartlett",
       },
     ],
-    scores: [5, 1],
+    scores: [5, 3],
   },
 };
 
