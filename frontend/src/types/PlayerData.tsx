@@ -1,6 +1,6 @@
 export interface PlayerData {
   title: string;
-  lastName: string;
-  profileUrl?: string;
+  last_name: string;
+  profile_url?: string;
   seed?: number;
 }

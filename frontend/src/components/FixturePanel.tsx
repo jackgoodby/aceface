@@ -24,35 +24,33 @@ interface FixtureData {
 //
 const Player1: PlayerData = {
   title: "Ms. J.",
-  lastName: "Skym",
+  last_name: "Skym",
   seed: 1,
 };
 const Player2: PlayerData = {
   title: "Ms. J.",
-  lastName: "Brayshay",
+  last_name: "Brayshay",
   seed: 1,
 };
 const Player3: PlayerData = {
   title: "Ms. L.",
-  lastName: "Hathaway",
+  last_name: "Hathaway",
 };
 const Player4: PlayerData = {
   title: "Ms. A.",
-  lastName: "Reeve",
+  last_name: "Reeve",
 };
 const TeamA: TeamData = {
   id: "ID",
   sort_key: "TEAMA",
   seed: 1,
-  player1: Player1,
-  player2: Player2,
+  players: [Player1, Player2],
 };
 const TeamB: TeamData = {
   id: "ID",
   sort_key: "TEAMB",
-  seed: 99,
-  player1: Player3,
-  player2: Player4,
+  seed: 0,
+  players: [Player3, Player4],
 };
 //
 // end team data setup
@@ -65,10 +63,15 @@ export default function FixturePanel(props: FixturePanelProps) {
     props.fixtureData?.actual_start_at,
     props.fixtureData?.ended_at,
   );
+  const startStatusClass = " not-started";
+  const courtName =
+    props.fixtureData?.court == "1"
+      ? "Centre Court"
+      : "Court " + props.fixtureData?.court;
   return (
-    <div className="fixture">
+    <div className={"fixture" + startStatusClass}>
       <div className="fixture-title-bar">
-        <span className="court">Court {props.fixtureData?.court}</span>
+        <span className="court">{courtName}</span>
       </div>
       <div className="fixture-card">
         <div className="fixture-card-wrap">

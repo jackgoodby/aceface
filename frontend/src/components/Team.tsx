@@ -6,20 +6,20 @@ interface TeamProps {
 }
 
 function Team(props: TeamProps) {
-  const player2 = props.teamData?.player2;
+  const player1 = props.teamData?.players[0];
+  const player2 = props.teamData?.players[1];
+  const gametype = "doubles";
   return (
-    <div className={"team " + props.teamData?.sort_key}>
-      <div className="players">
-        <Player playerData={props.teamData?.player1} />
-        {props.teamData?.player2 && (
-          <Player playerData={props.teamData?.player2} />
-        )}
+    <div className={"team " + props.teamData?.sort_key?.toLowerCase()}>
+      <div className={"players " + gametype}>
+        <Player playerData={player1} />
+        {player2 && <Player playerData={player2} />}
       </div>
       <div className="scores">
-        <span className="point">40</span>
-        <span className="set-game">7</span>
-        <span className="set-game">4</span>
-        <span className="set-game"> </span>
+        {/*<span className="point">40</span>*/}
+        <span className="set-game">-</span>
+        <span className="set-game">-</span>
+        <span className="set-game">-</span>
       </div>
     </div>
   );

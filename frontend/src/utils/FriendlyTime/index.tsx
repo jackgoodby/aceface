@@ -29,7 +29,7 @@ export default function formatFriendlyMatchTime(
       minute: "numeric",
     });
 
-    display = "Starts: " + day + " " + date + suffix + " " + month + " " + time;
+    display = day + " " + date + suffix + " " + month + " " + time;
   } else {
     // there is a start time - it's begin
     const startEpochMs = new Date(actualStart).valueOf();

@@ -7,7 +7,7 @@ function App() {
         <img
           src="/images/sltc-logo.png"
           alt="Stourbridge Tennis Club Logo"
-          width="50"
+          width="75"
         />
       </div>
       <Fixtures />

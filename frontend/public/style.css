@@ -46,7 +46,7 @@ body {
     top: 0;
     width: 100%;
     background-color: #05406f;
-    padding: 10px 0;
+    padding: 20px 0 10px 0;
     text-align: center;
     z-index: 10000;
 }
@@ -68,7 +68,7 @@ body {
     color: #fff;
     margin-bottom: 7px;
     font-family: Avenir, "ralewaylight", sans-serif;
-    font-size: 20px;
+    font-size: 24px;
 }
 
 .fixture-card{
@@ -88,15 +88,15 @@ body {
 .fixture-status{
     clear: left;
     float: left;
-    margin: 15px 0px 0 0px;
-    font-family: "ralewayregular", sans-serif;
-    font-size: 16px;
-    color: #666;
+    margin: 20px 0px 0 0px;
+    font-family: Avenir, "ralewaylight", sans-serif;
+    color: #999;
     width: 100%;
 }
 
 .fixture-status .duration{
     float: left;
+    font-size: 18px;
 }
 
 .fixture-status .completed{
@@ -105,10 +105,10 @@ body {
 
 .fixture-name{
     margin: 0 0 10px 0;
-    font-family: "ralewaymedium", sans-serif;
-    font-size: 1.3em;
+    font-family: "avenir", "ralewaymedium", sans-serif;
+    font-size: 1.4em;
     text-align: center;
-    color: #666;
+    color: #000;
 }
 
 .team{
@@ -119,17 +119,17 @@ body {
     /*background-color: darkorange;*/
 }
 .teama{
-    padding-bottom: 10px;
-    border-bottom: 2px dashed #a6a6a6;
+    padding-bottom: 12px;
+    border-bottom: 2px dotted #cccccc;
 }
 
 .teamb{
-    margin-top: 10px;
+    margin-top: 7px;
 }
 
 .players {
     float: left;
-    width: 53%;
+    width: 60%;
     /*background: #ff0;*/
 }
 
@@ -141,6 +141,9 @@ body {
     overflow: hidden;
     font-family: "ralewayregular", sans-serif;
     font-size: 0.9em;
+}
+.player.doubles{
+    font-size: 1.2em;
 }
 .player img{
     float: left;
@@ -163,19 +166,23 @@ body {
 
 .scores{
     float: left;
-    width: 47%;
-    /*background: #ccc;*/
+    width: 40%;
+}
+
+.scores{
+    float: left;
+    width: 40%;
 }
 
 .teama .scores {
     position: absolute;
-    bottom: 30px;
+    bottom: 13px;
     right: 0;
 }
 
 .teamb .scores {
     position: absolute;
-    top: 25px;
+    top: 4px;
     right: 0;
 }
 
@@ -184,11 +191,14 @@ body {
     float: left;
     width: 22px;
     max-width: 44px;
-    font-family: "sf_pro_displaylight", sans-serif;
-    font-size: 2.2em;
+    font-family: "sf_pro_displaylight", Avenir, sans-serif;
+    font-size: 2.5em;
     text-align: center;
-    margin-right: 8px;
-    /*background: burlywood;*/
+    margin-right: 16px;
+}
+
+.not-started .scores{
+    color: #cccccc;
 }
 
 .scores span.set-game:last-of-type {

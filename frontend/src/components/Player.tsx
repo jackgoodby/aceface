@@ -7,11 +7,11 @@ interface PlayerProps {
 
 function Player(props: PlayerProps) {
   return (
-    <div className="player">
-      {props.playerData?.profileUrl && (
-        <img src={props.playerData?.profileUrl} className="playerimage" />
+    <div className="player doubles">
+      {props.playerData?.profile_url && (
+        <img src={props.playerData?.profile_url} className="playerimage" />
       )}
-      {props.playerData?.title} {props.playerData?.lastName}
+      {props.playerData?.title} {props.playerData?.last_name}
       {props.playerData?.seed && (
         <span className="seed"> ({props.playerData?.seed})</span>
       )}
