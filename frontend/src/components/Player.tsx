@@ -7,7 +7,7 @@ interface PlayerProps {
 
 function Player(props: PlayerProps) {
   return (
-    <div className="player doubles">
+    <div className="player">
       {props.playerData?.profile_url && (
         <img src={props.playerData?.profile_url} className="playerimage" />
       )}

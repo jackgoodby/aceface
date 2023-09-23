@@ -66,12 +66,13 @@ export default function FixturePanel(props: FixturePanelProps) {
   const startStatusClass = props.fixtureData?.actual_start_at
     ? " started"
     : " not-started";
+  const gameTypeClass = TeamA.players.length == 1 ? " singles" : " doubles";
   const courtName =
     props.fixtureData?.court == "1"
       ? "Centre Court"
       : "Court " + props.fixtureData?.court;
   return (
-    <div className={"fixture" + startStatusClass}>
+    <div className={"fixture" + startStatusClass + gameTypeClass}>
       <div className="fixture-title-bar">
         <span className="court">{courtName}</span>
       </div>

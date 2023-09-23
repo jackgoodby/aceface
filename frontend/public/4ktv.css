@@ -36,6 +36,9 @@
 .fixture-status{
     margin: 50px 0 0 0;
 }
+.fixture.singles .fixture-status{
+    margin: 75px 0px 0 0px;
+}
 
 .fixture-status .duration{
     font-size: 3em;
@@ -46,14 +49,23 @@
     font-family: "ralewaylight", sans-serif;
     font-size: 5em;
 }
+.fixture.singles .fixture-name{
+    margin: 0 0 65px 0;
+}
 
 .teama{
     padding-bottom: 33px;
     border-bottom: 7px dotted #cccccc;
 }
+.fixture.singles .teama{
+    padding-bottom: 50px;
+}
 
 .teamb{
     margin-top: 32px;
+}
+.fixture.singles .teamb{
+    margin-top: 50px;
 }
 
 .players {
@@ -64,10 +76,13 @@
     overflow: hidden;
     font-size: 4.2em;
 }
-.player.doubles{
+.fixture.singles .player{
+    font-size: 5.2em;
+}
+.fixture.doubles .player{
     font-size: 4.2em;
 }
-.player.doubles:last-of-type {
+.fixture.doubles .player:last-of-type {
     padding-top: 14px;
 }
 
@@ -95,9 +110,15 @@
 .teama .scores {
     bottom: 10px;
 }
+.fixture.singles .teama .scores{
+    bottom: -14px;
+}
 
 .teamb .scores {
     top: -30px;
+}
+.fixture.singles .teamb .scores{
+    top: -70px;
 }
 
 .scores span {
