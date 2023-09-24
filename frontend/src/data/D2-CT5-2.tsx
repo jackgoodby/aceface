@@ -14,7 +14,7 @@ const fixture13: MatchData = {
         last_name: "Carter",
       },
     ],
-    scores: [4],
+    scores: [5],
   },
   team_b: {
     id: "teamb",
@@ -24,7 +24,7 @@ const fixture13: MatchData = {
         last_name: "Millinson",
       },
     ],
-    scores: [1],
+    scores: [2],
   },
 };
 
