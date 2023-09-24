@@ -17,7 +17,7 @@ DONE
 */
 const fixture12: MatchData = {
   scheduled_start_at: "2023-09-24T12:00:00Z",
-  actual_start_at: "",
+  actual_start_at: "2023-09-24T12:15:00Z",
   ended_at: "",
   court: "5",
   tournament_name: "Veteran Ladies' Singles Final",
