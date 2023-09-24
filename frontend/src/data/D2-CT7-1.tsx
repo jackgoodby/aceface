@@ -16,8 +16,8 @@ Data file naming: [day]-[court]-[game]
 DONE
 */
 const fixture14: MatchData = {
-  scheduled_start_at: "2023-09-24T12:00:00Z",
-  actual_start_at: "2023-09-24T12:15:00Z",
+  scheduled_start_at: "2023-09-24T13:30:00Z",
+  actual_start_at: "",
   ended_at: "",
   court: "7",
   tournament_name: "Veteran Men's Doubles Final",

@@ -20,7 +20,7 @@ DONE
 const fixture9: MatchData = {
   scheduled_start_at: "2023-09-24T12:00:00Z",
   actual_start_at: "2023-09-24T12:15:00Z",
-  ended_at: "2023-09-24T12:14:55Z",
+  ended_at: "2023-09-24T12:55:00Z",
   court: "1",
   tournament_name: "Men's Singles Final",
   team_a: {
