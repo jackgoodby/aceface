@@ -48,7 +48,7 @@ const fixture11: MatchData = {
       },
       {
         title: "Ms. M.",
-        last_name: "Oddland",
+        last_name: "Odland",
       },
     ],
     scores: [0, 0],
