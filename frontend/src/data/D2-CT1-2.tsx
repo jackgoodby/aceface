@@ -32,7 +32,7 @@ const fixture10: MatchData = {
       },
       {
         title: "Ms. M.",
-        last_name: "Oddland",
+        last_name: "Odland",
         seed: 3,
       },
     ],
