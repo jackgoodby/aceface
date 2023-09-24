@@ -30,7 +30,7 @@ const fixture12: MatchData = {
         seed: 2,
       },
     ],
-    scores: [0, 2, 0],
+    scores: [0, 2],
   },
   team_b: {
     id: "teamb",
@@ -41,7 +41,7 @@ const fixture12: MatchData = {
         seed: 1,
       },
     ],
-    scores: [6, 6, 0],
+    scores: [6, 6],
   },
 };
 
