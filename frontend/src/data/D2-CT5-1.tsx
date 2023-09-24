@@ -18,7 +18,7 @@ DONE
 const fixture12: MatchData = {
   scheduled_start_at: "2023-09-24T12:00:00Z",
   actual_start_at: "2023-09-24T12:15:00Z",
-  ended_at: "",
+  ended_at: "2023-09-24T13:05:00Z",
   court: "5",
   tournament_name: "Veteran Ladies' Singles Final",
   team_a: {
@@ -41,7 +41,7 @@ const fixture12: MatchData = {
         seed: 1,
       },
     ],
-    scores: [6, 5, 0],
+    scores: [6, 6, 0],
   },
 };
 
