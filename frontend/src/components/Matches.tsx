@@ -19,15 +19,14 @@ import fixture15 from "../data/D2-CT7-2";
 export default function Matches() {
   return (
     <div id="fixtures">
-      <FlatMatch matchData={fixture10} />
+      <FlatMatch matchData={fixture11} />
       <FlatMatch matchData={fixture15} />
       <div className="fullwidth-title-bar">Played</div>
+      <FlatMatch matchData={fixture10} />
       <FlatMatch matchData={fixture13} />
       <FlatMatch matchData={fixture14} />
       <FlatMatch matchData={fixture9} />
       <FlatMatch matchData={fixture12} />
-      <div className="fullwidth-title-bar">Later Today</div>
-      <FlatMatch matchData={fixture11} />
 
       <div className="fullwidth-title-bar">Yesterday's Matches</div>
       <FlatMatch matchData={fixture8} />
