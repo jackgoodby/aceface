@@ -17,7 +17,7 @@ DONE
 */
 const fixture14: MatchData = {
   scheduled_start_at: "2023-09-24T13:30:00Z",
-  actual_start_at: "",
+  actual_start_at: "2023-09-24T13:30:00Z",
   ended_at: "",
   court: "7",
   tournament_name: "Veteran Men's Doubles Final",
@@ -51,7 +51,7 @@ const fixture14: MatchData = {
         seed: 1,
       },
     ],
-    scores: [0, 0, 0],
+    scores: [1, 0, 0],
   },
 };
 

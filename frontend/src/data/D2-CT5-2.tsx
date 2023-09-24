@@ -2,7 +2,7 @@ import { MatchData } from "../types/MatchData";
 
 const fixture13: MatchData = {
   scheduled_start_at: "2023-09-24T14:00:00Z",
-  actual_start_at: "",
+  actual_start_at: "2023-09-24T13:30:00Z",
   ended_at: "",
   court: "5",
   tournament_name: "Ladies' Singles Plate Final",
@@ -14,7 +14,7 @@ const fixture13: MatchData = {
         last_name: "Carter",
       },
     ],
-    scores: [],
+    scores: [1],
   },
   team_b: {
     id: "teamb",
@@ -24,7 +24,7 @@ const fixture13: MatchData = {
         last_name: "Millinson",
       },
     ],
-    scores: [],
+    scores: [0],
   },
 };
 
