@@ -71,6 +71,15 @@ body {
     font-family: Avenir, "ralewaylight", sans-serif;
 }
 
+.fullwidth-title-bar{
+    float: left;
+    width: 100%;
+    color: #fff;
+    font-family: ralewaylight, sans-serif;
+    text-align: center;
+    border-bottom: 2px groove #ffffff;
+}
+
 .fixture-card{
     background-color: #fff;
     float: left;
