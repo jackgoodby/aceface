@@ -3,7 +3,7 @@ import { MatchData } from "../types/MatchData";
 const fixture15: MatchData = {
   scheduled_start_at: "2023-09-24T15:00:00Z",
   actual_start_at: "2023-09-24T15:05:00Z",
-  ended_at: "",
+  ended_at: "2023-09-24T16:12:00Z",
   court: "7",
   tournament_name: "Ladies' Over 60s Doubles Final",
   team_a: {
@@ -20,7 +20,7 @@ const fixture15: MatchData = {
         seed: 1,
       },
     ],
-    scores: [6, 5],
+    scores: [6, 6],
   },
   team_b: {
     id: "teamb",

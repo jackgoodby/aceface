@@ -34,7 +34,7 @@ const fixture11: MatchData = {
         last_name: "Odland",
       },
     ],
-    scores: [2],
+    scores: [4],
   },
 };
 
