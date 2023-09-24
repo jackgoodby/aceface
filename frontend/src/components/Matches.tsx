@@ -20,8 +20,9 @@ export default function Matches() {
   return (
     <div id="fixtures">
       <FlatMatch matchData={fixture11} />
-      <FlatMatch matchData={fixture15} />
+
       <div className="fullwidth-title-bar">Played</div>
+      <FlatMatch matchData={fixture15} />
       <FlatMatch matchData={fixture10} />
       <FlatMatch matchData={fixture13} />
       <FlatMatch matchData={fixture14} />

@@ -28,13 +28,15 @@ const fixture11: MatchData = {
       {
         title: "Mr. O.",
         last_name: "Hicks",
+        seed: 7,
       },
       {
         title: "Ms. M.",
         last_name: "Odland",
+        seed: 7,
       },
     ],
-    scores: [6, 0],
+    scores: [6, 1],
   },
 };
 
