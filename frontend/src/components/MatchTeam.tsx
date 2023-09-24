@@ -8,9 +8,23 @@ interface TeamProps {
 export default function MatchTeam(props: TeamProps) {
   const player1 = props.teamData.players[0];
   const player2 = props.teamData.players[1];
-  const set1score = props.teamData.scores[0] ? props.teamData.scores[0] : "-";
-  const set2score = props.teamData.scores[1] ? props.teamData.scores[1] : "-";
-  const set3score = props.teamData.scores[2] ? props.teamData.scores[2] : "-";
+
+  let set1score = props.teamData.scores[0] ? props.teamData.scores[0] : "-";
+  let set2score = props.teamData.scores[1] ? props.teamData.scores[1] : "-";
+  let set3score = props.teamData.scores[2] ? props.teamData.scores[2] : "";
+
+  if (props.teamData.scores[0] === 0) {
+    set1score = props.teamData.scores[0].toString();
+  }
+
+  if (props.teamData.scores[1] === 0) {
+    set2score = props.teamData.scores[1].toString();
+  }
+
+  if (props.teamData.scores[2] === 0) {
+    set3score = props.teamData.scores[2].toString();
+  }
+
   return (
     <div className={"team " + props.teamData.id}>
       <div className={"players"}>

@@ -48,10 +48,6 @@ export default function formatFriendlyMatchTime(
 
     const durationMs = endEpochMs - startEpochMs;
 
-    console.log(startEpochMs);
-    console.log(endEpochMs);
-    console.log(durationMs);
-
     const minutes = Math.floor((durationMs / (1000 * 60)) % 60),
       hours = Math.floor((durationMs / (1000 * 60 * 60)) % 24);
     if (hours == 0) {
