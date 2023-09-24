@@ -3,7 +3,7 @@ import { MatchData } from "../types/MatchData";
 const fixture11: MatchData = {
   scheduled_start_at: "2023-09-24T16:00:00Z",
   actual_start_at: "2023-09-24T15:55:00Z",
-  ended_at: "",
+  ended_at: "2023-09-24T17:07:00Z",
   court: "1",
   tournament_name: "Mixed Doubles Final",
   team_a: {
@@ -20,7 +20,7 @@ const fixture11: MatchData = {
         seed: 3,
       },
     ],
-    scores: [2, 6, 8],
+    scores: [2, 6, 10],
   },
   team_b: {
     id: "teamb",
