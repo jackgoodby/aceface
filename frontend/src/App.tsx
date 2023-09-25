@@ -20,10 +20,15 @@ function App() {
       </p>
 
       <p>
-        AceFace shall return... (watch out for live team match scores this
-        autumn)
+        AceFace will return... (watch out for live team match scores this
+        autumn!).
       </p>
       <Matches />
+
+      <p className="rights-notice">
+        AceFace is created and maintained by Jack Goodby for JTBW Limited.
+        Enquiries: jackgoodby@me.com
+      </p>
     </>
   );
 }
