@@ -38,7 +38,7 @@ const fixture9: MatchData = {
     id: "teamb",
     players: [
       {
-        title: "Ms. J.",
+        title: "Mr. J.",
         last_name: "Hart",
         seed: 2,
       },

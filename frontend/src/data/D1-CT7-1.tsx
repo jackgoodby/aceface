@@ -26,10 +26,12 @@ const fixture6: MatchData = {
       {
         title: "Ms. J.",
         last_name: "Skym",
+        seed: 1,
       },
       {
         title: "Mr. M.",
         last_name: "Luckley",
+        seed: 1,
       },
     ],
     scores: [6, 6],

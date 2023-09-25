@@ -39,6 +39,7 @@ body {
     margin: 0;
     padding: 0;
     overscroll-behavior: none;
+    font-size: 18px;
 }
 
 #banner{
@@ -51,6 +52,28 @@ body {
 }
 
 #banner img {
+}
+
+h1,h2,h3,h4,h5,p {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-family: "ralewaylight", sans-serif;
+    color: #ffffff;
+    text-align: center;
+}
+
+h2 {
+    font-family: "ralewaylight", sans-serif;
+    color: #ffffff;
+}
+
+p {
+    font-family: "Avenir light", sans-serif;
+    color: #ffffff;
+    margin-bottom: 1.2em;
 }
 
 #fixtures{
@@ -179,56 +202,4 @@ body {
     border-radius: 4px;
     padding: 10px;
     clear: left;
-}
-
-@media (max-width: 640px) {
-    h1 {
-        color: red;
-    }
-
-    .desc:before {
-        content: "This browser window is smaller than 640px wide.";
-    }
-}
-
-@media (min-width: 640px) {
-    h1 {
-        color: blue;
-    }
-
-    .desc:before {
-        content: "This browser window is at least 640px wide!";
-    }
-}
-
-@media (min-width: 500px) and (max-width: 600px) {
-    h1 {
-        color: fuchsia;
-    }
-
-    .desc:after {
-        content: " In fact, it's between 500px and 600px wide.";
-    }
-}
-
-@media (min-width: 2560px) {
-    h1 {
-        color: fuchsia;
-    }
-
-    .desc:after {
-        content: " 4K telly baby";
-    }
-}
-
-@media (orientation: portrait) {
-    .orientation:after {
-        content: " Portrait.";
-    }
-}
-
-@media (orientation: landscape) {
-    .orientation:after {
-        content: " Landscape.";
-    }
 }

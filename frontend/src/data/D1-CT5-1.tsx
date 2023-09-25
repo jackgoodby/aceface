@@ -12,6 +12,7 @@ const fixture4: MatchData = {
       {
         title: "Mr. J.",
         last_name: "Adams",
+        seed: 2,
       },
     ],
     scores: [3, 6],
@@ -22,6 +23,7 @@ const fixture4: MatchData = {
       {
         title: "Mr. P.",
         last_name: "Mainprice",
+        seed: 1,
       },
     ],
     scores: [6, 7],

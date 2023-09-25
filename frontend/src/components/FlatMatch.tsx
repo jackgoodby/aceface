@@ -25,11 +25,11 @@ export default function FlatMatch(props: FlatMatchProps) {
   return (
     <div className={"fixture" + startStatusClass + gameTypeClass}>
       <div className="fixture-title-bar">
-        <span className="court">{courtName}</span>
+        <span className="court">{props.matchData.tournament_name}</span>
       </div>
       <div className="fixture-card">
         <div className="fixture-card-wrap">
-          <div className="fixture-name">{props.matchData.tournament_name}</div>
+          {/*<div className="fixture-name">{courtName}</div>*/}
           <MatchTeam teamData={props.matchData.team_a} />
           <MatchTeam teamData={props.matchData.team_b} />
           <div className="fixture-status">

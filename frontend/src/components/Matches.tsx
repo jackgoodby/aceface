@@ -20,15 +20,12 @@ export default function Matches() {
   return (
     <div id="fixtures">
       <FlatMatch matchData={fixture11} />
-
-      <div className="fullwidth-title-bar">Played</div>
       <FlatMatch matchData={fixture15} />
       <FlatMatch matchData={fixture10} />
       <FlatMatch matchData={fixture13} />
       <FlatMatch matchData={fixture14} />
       <FlatMatch matchData={fixture9} />
       <FlatMatch matchData={fixture12} />
-
       <div className="fullwidth-title-bar">Yesterday's Matches</div>
       <FlatMatch matchData={fixture8} />
       <FlatMatch matchData={fixture3} />

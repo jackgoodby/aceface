@@ -2,6 +2,20 @@
     padding: 10px;
 }
 
+h1 {
+    font-size: 1.7em;
+    margin-bottom: 15px;
+}
+
+h2 {
+    font-size: 1.4em;
+    margin-bottom: 0.8em;
+}
+
+p {
+    margin-bottom: 1em
+}
+
 #banner{
     padding: 20px 0 10px 0;
 }
