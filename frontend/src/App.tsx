@@ -26,8 +26,8 @@ function App() {
       <Matches />
 
       <p className="rights-notice">
-        AceFace is created and maintained by Jack Goodby for JTBW Limited.
-        Enquiries: jackgoodby@me.com
+        Created and maintained by Jack Goodby for JTBW Limited. Enquiries:
+        jackgoodby@me.com
       </p>
     </>
   );
