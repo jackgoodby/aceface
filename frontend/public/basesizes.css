@@ -13,11 +13,12 @@ h2 {
 }
 
 p {
-    margin-bottom: 0.5em
+    margin-bottom: 0.5em;
+    font-size: 18px;
 }
 
 #banner{
-    padding: 20px 0 10px 0;
+    padding: 20px 0 20px 0;
 }
 
 #banner img {
@@ -25,6 +26,7 @@ p {
 }
 
 #fixtures{
+    margin-top: 20px;
 }
 
 .fixture{
@@ -36,63 +38,31 @@ p {
     font-size: 24px;
 }
 
-.fullwidth-title-bar{
-    font-size: 30px;
-    padding-bottom: 10px;
-    margin: 0 0 11px 0;
-}
-
 .fixture-card{
     border-radius: 10px;
-    padding: 20px 0 10px 0;
+    padding: 20px 0 20px 0;
 }
 
 .fixture-card-wrap{
-    margin: 0 0 0 10px;
+    margin: 0;
     width: 94%;
-}
-
-.fixture-status{
-    margin: 20px 0px 0 0px;
-}
-.fixture.singles .fixture-status{
-    margin: 23px 0px 0 0px;
-}
-
-.fixture-status .duration{
-    font-size: 16px;
-}
-
-.fixture-name {
-    margin: 0 0 12px 0;
-    font-size: 24px;
-}
-.fixture.singles .fixture-name{
-    margin: 0 0 15px 0;
 }
 
 .teama{
     padding-bottom: 12px;
     border-bottom: 2px dotted #cccccc;
 }
-.fixture.singles .teama{
-    padding-bottom: 16px;
-}
 
 .teamb{
     margin-top: 12px;
 }
-.fixture.singles .teamb{
-    margin-top: 16px;
-}
 
 .players {
-    width: 60%;
+    height: 51px;
 }
 
 .player{
     overflow: hidden;
-    font-size: 19px;
 }
 .fixture.singles .player{
     font-size: 23px;
@@ -104,14 +74,14 @@ p {
     padding-top: 6px;
 }
 
-.player img{
-    float: left;
-    width: 45px;
-    height: 45px;
-    max-width: 45px;
-    margin: -6px 10px 0 0;
-    border-radius: 50%;
-}
+/*.player img{*/
+/*    float: left;*/
+/*    width: 45px;*/
+/*    height: 45px;*/
+/*    max-width: 45px;*/
+/*    margin: -6px 10px 0 0;*/
+/*    border-radius: 50%;*/
+/*}*/
 
 .seed{
     font-size: 1em;
@@ -121,46 +91,21 @@ p {
     margin-top: 5px;
 }
 
-.scores{
-    width: 40%;
-}
-
-.teama .scores {
-    bottom: 13px;
-}
-.fixture.singles .teama .scores{
-    bottom: 4px;
-}
-
-.teamb .scores {
-    top: -2px;
-}
-.fixture.singles .teamb .scores{
-    top: -15px;
-}
-
 .scores span {
-    width: 22px;
-    max-width: 44px;
+    width: 1em;
     font-size: 40px;
-    margin-right: 16px;
+    margin: -12px 16px -10px 0;
 }
 
 .scores span.set-game:last-of-type {
     margin-right: 0;
-    width: 28px;
 }
 
-.scores .point {
-    margin-right: 21px;
-    width: 38px;
+.fixture-status{
+    margin: 20px 0px 0 0px;
+    font-size: 16px;
 }
 
-.desc {
-    background: #ccc;
-    color: #000;
-}
-
-.desc:before {
-    content: "Browsers <= 375px width";
+.div.footer p{
+    font-size: 16px;
 }

@@ -18,10 +18,10 @@ export default function FlatMatch(props: FlatMatchProps) {
     : " not-started";
   const gameTypeClass =
     props.matchData.team_a.players.length == 1 ? " singles" : " doubles";
-  const courtName =
-    props.matchData.court == "1"
-      ? "Centre Court"
-      : "Court " + props.matchData.court;
+  // const courtName =
+  //   props.matchData.court == "1"
+  //     ? "Centre Court"
+  //     : "Court " + props.matchData.court;
   return (
     <div className={"fixture" + startStatusClass + gameTypeClass}>
       <div className="fixture-title-bar">
@@ -33,7 +33,15 @@ export default function FlatMatch(props: FlatMatchProps) {
           <MatchTeam teamData={props.matchData.team_a} />
           <MatchTeam teamData={props.matchData.team_b} />
           <div className="fixture-status">
-            <div className="duration">{friendlyTime}</div>
+            <div className="duration">
+              {props.matchData.ended_at && (
+                <span>
+                  Match played on Court {props.matchData.court}
+                  <br />
+                </span>
+              )}
+              {friendlyTime}
+            </div>
           </div>
         </div>
       </div>

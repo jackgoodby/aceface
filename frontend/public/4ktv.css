@@ -18,12 +18,11 @@ p {
 }
 
 #banner{
-    padding: 20px 0 10px 0;
-    display: none;
+    padding: 20px 0 50px 0;
 }
 
 #banner img {
-    width: 100px;
+    width: 200px;
 }
 
 #fixtures{
@@ -31,72 +30,39 @@ p {
 }
 
 .fixture{
-    margin-bottom: 60px;
+    margin-bottom: 80px;
 }
 
 .fixture-title-bar{
     margin-bottom: 12px;
-    font-size: 4em;
-}
-
-.fullwidth-title-bar{
-    font-size: 90px;
-    padding-bottom: 20px;
-    margin: 100px 0 30px 0;
+    font-size: 5em;
 }
 
 .fixture-card{
     border-radius: 20px;
-    padding: 30px 0 20px 0;
+    padding: 50px 0 20px 0;
 }
 
 .fixture-card-wrap{
-    margin: 0 0 0 30px;
-    width: 96%;
-}
-
-.fixture-status{
-    margin: 50px 0 0 0;
-}
-.fixture.singles .fixture-status{
-    margin: 75px 0px 0 0px;
-}
-
-.fixture-status .duration{
-    font-size: 3em;
-}
-
-.fixture-name {
-    margin: 0 0 40px 0;
-    font-family: "ralewaylight", sans-serif;
-    font-size: 5em;
-}
-.fixture.singles .fixture-name{
-    margin: 0 0 65px 0;
+    margin: 0;
+    width: 94%;
 }
 
 .teama{
     padding-bottom: 33px;
     border-bottom: 7px dotted #cccccc;
 }
-.fixture.singles .teama{
-    padding-bottom: 50px;
-}
 
 .teamb{
     margin-top: 32px;
 }
-.fixture.singles .teamb{
-    margin-top: 50px;
-}
 
 .players {
-    width: 55%;
+    height: 173px;
 }
 
 .player{
     overflow: hidden;
-    font-size: 4.2em;
 }
 .fixture.singles .player{
     font-size: 5.2em;
@@ -108,14 +74,14 @@ p {
     padding-top: 14px;
 }
 
-.player img{
-    float: left;
-    width: 45px;
-    height: 45px;
-    max-width: 45px;
-    margin: -6px 10px 0 0;
-    border-radius: 50%;
-}
+/*.player img{*/
+/*    float: left;*/
+/*    width: 45px;*/
+/*    height: 45px;*/
+/*    max-width: 45px;*/
+/*    margin: -6px 10px 0 0;*/
+/*    border-radius: 50%;*/
+/*}*/
 
 .seed{
     font-size: 1em;
@@ -125,46 +91,21 @@ p {
     margin-top: 5px;
 }
 
-.scores{
-    width: 45%;
-}
-
-.teama .scores {
-    bottom: 10px;
-}
-.fixture.singles .teama .scores{
-    bottom: -14px;
-}
-
-.teamb .scores {
-    top: -30px;
-}
-.fixture.singles .teamb .scores{
-    top: -70px;
-}
-
 .scores span {
     width: 1em;
-    max-width: 2em;
     font-size: 11em;
-    margin-right: 10px;
+    margin: -0.3em 20px -0.3em 0;
 }
 
 .scores span.set-game:last-of-type {
     margin-right: 0;
-    width: 1em;
 }
 
-.scores .point {
-    margin-right: 21px;
-    width: 38px;
+.fixture-status{
+    margin: 70px 0 0 0;
+    font-size: 3em;
 }
 
-.desc {
-    background: #ccc;
-    color: #000;
-}
-
-.desc:before {
-    content: "large phone > 375px width";
+div.footer p{
+    font-size: 2em;
 }

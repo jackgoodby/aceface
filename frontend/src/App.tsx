@@ -25,10 +25,12 @@ function App() {
       </p>
       <Matches />
 
-      <p className="rights-notice">
-        Created and maintained by Jack Goodby for JTBW Limited. Enquiries:
-        jackgoodby@me.com
-      </p>
+      <div className="footer">
+        <p>
+          Created and maintained by Jack Goodby for JTBW Limited. Enquiries:
+          jackgoodby@me.com
+        </p>
+      </div>
     </>
   );
 }

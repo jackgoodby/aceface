@@ -24,20 +24,14 @@ export default function Matches() {
       <FlatMatch matchData={fixture10} />
       <FlatMatch matchData={fixture2} />
       <FlatMatch matchData={fixture11} />
-
       <FlatMatch matchData={fixture15} />
-
       <FlatMatch matchData={fixture13} />
       <FlatMatch matchData={fixture14} />
-
       <FlatMatch matchData={fixture12} />
-
       <FlatMatch matchData={fixture8} />
       <FlatMatch matchData={fixture3} />
-
       <FlatMatch matchData={fixture5} />
       <FlatMatch matchData={fixture7} />
-
       <FlatMatch matchData={fixture4} />
       <FlatMatch matchData={fixture6} />
     </div>
